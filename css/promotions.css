@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* Purpose: CSS document for project */
+/* Developed by: Filipe Moreira, Jia Zhu, Kevin Darby, Tingting Song, Xiaotong Zhang */
+/* Script Date: August 27, 2021 */
+
+body {
+    margin: auto;
+    max-width: 1200px;
+    min-width: 800px;    
+}
+
+#mainHeading{
+    text-align: center;
+    color: white;  
+    font-family: 'Lemon', cursive;  
+}
+
+#leftSidebar{
+    background-color: #FFF3B0;
+    color: white;
+    background-image: url(/images/background.jpg);
+    padding-top: 10px;
+    width:25%;
+    height:69%;   
+    float: left;
+}
+
+.drinkPic{
+    width: 80%;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.sidebarHeading{
+    text-align: center;
+    font-size: x-large;
+}
+#mainContent{
+    height:690px;   
+    width: 50%;
+    background-color:#E09F3E;
+    float: left;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#rightSidebar{
+    background-image:url("/images/background.jpg");
+    font-size: large;
+    padding-top: 10px;
+    color: white;
+    width:25%;
+    height:69%;      
+    float: right;
+    text-align: center;
+}
+
+div span {
+    color: white;
+}
+
+span {
+    background-color: #540B0E;    
+    display: inline-block;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+#veganBurgerPic{
+    width: 90%;
+    height: fit-content;
+}
+
+#container{
+    background-image: url(/images/background.jpg);
+    height: 1000px;
+}
+
+#phonePic{
+    width:90%;
+    height: 100%;
+    margin: 0 -15px;
+}
+
+aside h2{
+    padding: 10px;
+}
+
+main h3{
+    padding: 15px 0
+}
+
+#appdownload {
+    padding-top: 350px;
+}
+
+#appstore {
+    padding-right: 23px;
+}
+
+#googleplay {
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #9E2A2B;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+
+footer h2 {
+    display: inline;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    left: 80px;
+    color: white;
+}
+
+footer h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    color: white;
+}
+#frSpan{
+    font-size: x-large;
+    background-color: #540B0E;    
+    display: inline-block;
+    border-radius: 50%;
+    width: 90px;
+    height: 75px;
+    text-align: center;
+    
+    padding-top: 15px;
+    margin-right: 10px;
+}
+@media screen and (max-width:400px) {
+ .drinkPic{
+    height:160px;
+ }  
+ #leftSidebar{
+     width:25%
+ }
+ #rightSidebar{
+     width:25%;
+     
+ }
+ .sidebarHeading{
+     font-size: large;
+ }
+ #mainContent{
+     width:50%;
+     height:500px;
+     font-size: small;
+ }
+ body{
+     width:400px;
+ }
+ #frSpan{
+    font-size: x-large;
+    background-color: #540B0E;    
+    display: inline-block;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    
+    padding-top: 15px;
+    margin-right: 10px;
+}
+span {
+    background-color: #540B0E;    
+    display: inline-block;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    
+    padding-top: 10px;
+    margin-right: 10px;
+}
+#veganBurgerPic{
+    height:200px;
+}
+}
+@media screen and (min-width: 401px) and (max-width: 768px)  {
+ .drinkPic{
+    height:200px;
+    width:100px;
+ }  
+ #leftSidebar{
+     width:25%
+ }
+ #rightSidebar{
+     width:25%;
+     
+ }
+ .sidebarHeading{
+     font-size: large;
+ }
+ #mainContent{
+     width:50%;
+     height:580px;
+     font-size: small;
+ }
+ body{
+     width:400px;
+ }
+ #frSpan{
+    font-size: x-large;
+    background-color: #540B0E;    
+    display: inline-block;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    
+    padding-top: 15px;
+    margin-right: 10px;
+}
+span {
+    background-color: #540B0E;    
+    display: inline-block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    
+    padding-top: 10px;
+    margin-right: 10px;
+}
+#veganBurgerPic{
+    height:200px;
+}
+
+
+
+}
