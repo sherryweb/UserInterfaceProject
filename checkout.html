@@ -68,41 +68,31 @@
                                     <label>Address</label>
                                     <input class="form-control" type="text" placeholder="Address">
                                 </div>
-                                <div class="col-md-6">
-                                    <label>Country</label>
-                                    <select class="custom-select">
-                                        <option selected>United States</option>
-                                        <option>Afghanistan</option>
-                                        <option>Albania</option>
-                                        <option>Algeria</option>
-                                    </select>
-                                </div>
+                                
                                 <div class="col-md-6">
                                     <label>City</label>
                                     <input class="form-control" type="text" placeholder="City">
                                 </div>
-                                <div class="col-md-6">
-                                    <label>State</label>
-                                    <input class="form-control" type="text" placeholder="State">
-                                </div>
+                              
                                 <div class="col-md-6">
                                     <label>ZIP Code</label>
                                     <input class="form-control" type="text" placeholder="ZIP Code">
                                 </div>
+                               
                                 <div class="col-md-12">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="newaccount">
-                                        <label class="custom-control-label" for="newaccount">Create an account</label>
+                                        <input type="checkbox" class="custom-control-input" id="same-address">
+                                        <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="shipto">
-                                        <label class="custom-control-label" for="shipto">Ship to different address</label>
+                                        <input type="checkbox" class="custom-control-input" id="save-info">
+                                        <label class="custom-control-label" for="save-info">Save this information for next time</label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div><!--end billing address-->
 
                         <div class="shipping-address">
                             <h2>Shipping Address</h2>
@@ -127,29 +117,87 @@
                                     <label>Address</label>
                                     <input class="form-control" type="text" placeholder="Address">
                                 </div>
-                                <div class="col-md-6">
-                                    <label>Country</label>
-                                    <select class="custom-select">
-                                        <option selected>United States</option>
-                                        <option>Afghanistan</option>
-                                        <option>Albania</option>
-                                        <option>Algeria</option>
-                                    </select>
-                                </div>
+                                
                                 <div class="col-md-6">
                                     <label>City</label>
                                     <input class="form-control" type="text" placeholder="City">
                                 </div>
-                                <div class="col-md-6">
-                                    <label>State</label>
-                                    <input class="form-control" type="text" placeholder="State">
-                                </div>
+                                
                                 <div class="col-md-6">
                                     <label>ZIP Code</label>
                                     <input class="form-control" type="text" placeholder="ZIP Code">
                                 </div>
                             </div>
-                        </div>
+                        </div><!--end shipping address-->
+
+
+
+
+                        <!-- strat payment method -->
+                        <hr class="mb-4">
+                            <div class="payment-methods">
+                                <h2>Payment Methods</h2>
+                                <div class="payment-method">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="payment-1" name="payment">
+                                        <label class="custom-control-label" for="payment-1">Credit card</label>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="payment-2" name="payment">
+                                        <label class="custom-control-label" for="payment-2">Debit card</label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="payment-3" name="payment">
+                                        <label class="custom-control-label" for="payment-3">Paypal</label>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cc-name">Name on card</label>
+                                        <input type="text" class="form-control" id="cc-name" placeholder="" required> <small class="text-muted">Full name as displayed on card</small>
+                                        <div class="invalid-feedback"> Name on card is required </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cc-number">Credit card number</label>
+                                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                        <div class="invalid-feedback"> Credit card number is required </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <label for="cc-expiration">Expiration</label>
+                                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                        <div class="invalid-feedback"> Expiration date required </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="cc-expiration">CVV</label>
+                                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                        <div class="invalid-feedback"> Security code required </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="payment-icon">
+                                            <ul>
+                                                <li><img class="img-fluid" src="images/payment-icon/1.png" alt=""></li>
+                                                <li><img class="img-fluid" src="images/payment-icon/2.png" alt=""></li>
+                                                <li><img class="img-fluid" src="images/payment-icon/3.png" alt=""></li>
+                                                <li><img class="img-fluid" src="images/payment-icon/5.png" alt=""></li>
+                                                <li><img class="img-fluid" src="images/payment-icon/7.png" alt=""></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--end payment method-->
+
+
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -164,49 +212,37 @@
 
                         <div class="checkout-payment">
                             <div class="payment-methods">
-                                <h1>Payment Methods</h1>
+                                <h1>Delivery Method</h1>
                                 <div class="payment-method">
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="payment-1" name="payment">
-                                        <label class="custom-control-label" for="payment-1">Credit card</label>
+                                        <input type="radio" class="custom-control-input" id="delivery-1" name="delivery">
+                                        <label class="custom-control-label" for="delivery-1">Pickup</label>
                                     </div>
-                                    <div class="payment-content" id="payment-1-show">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
-                                        </p>
-                                    </div>
+                                   
                                 </div>
                                 <div class="payment-method">
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="payment-2" name="payment">
-                                        <label class="custom-control-label" for="payment-2">Debit card</label>
-                                    </div>
-                                    <div class="payment-content" id="payment-2-show">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
-                                        </p>
+                                        <input type="radio" class="custom-control-input" id="delivery-2" name="delivery">
+                                        <label class="custom-control-label" for="delivery-2">Delivery</label>
                                     </div>
                                 </div>
-                                <div class="payment-method">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="payment-3" name="payment">
-                                        <label class="custom-control-label" for="payment-3">Paypal</label>
-                                    </div>
-                                    <div class="payment-content" id="payment-3-show">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
-                                        </p>
+                                <br />
+
+                                <div class="control-group">
+                                    <div class="input-group date" id="date" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="payment-method">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="payment-4" name="payment">
-                                        <label class="custom-control-label" for="payment-4">Cash on Delivery</label>
-                                    </div>
-                                    <div class="payment-content" id="payment-4-show">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt orci ac eros volutpat maximus lacinia quis diam.
-                                        </p>
+                                
+                                <div class="control-group">
+                                    <div class="input-group time" id="time" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +287,7 @@
      <script src="lib/slick/slick.min.js"></script>
      
      <!-- Template Javascript -->
-     <script src="js/main.js"></script>
+     <script src="js/checkout.js"></script>
 </body>
 
 </html>

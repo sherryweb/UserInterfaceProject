@@ -3,7 +3,7 @@
 
 /* Purpose: CSS document for booking */
 /* Developed by: Xiaotong Zhang */
-/* Script Date: August 2021 */
+/* Script Date: Sep  2021 */
 
 
 /*******************************/
@@ -170,6 +170,14 @@ nav h2 a {
     background: lightgray;
 }
 
+.payment-icon {
+    display: inline-block;
+    padding: 10px 0px;
+}
+.payment-icon ul li {
+    width: 20%;
+    float: left;
+}
 
 
 /*********  footer CSS *********/
