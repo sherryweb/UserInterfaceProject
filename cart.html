@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Los Pollos Hermanos</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/Los_Pollos_Hermanos_logo.png"
+        alt="Logo of Los Pollos Hermanos"
+      />
+      <h1>Fast-food restaurant</h1>
+      <nav>
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="order.html">Menu</a></h2>
+        <h2><a href="promotions.html">Promotions</a></h2>
+        <h2><a href="booking.html">Booking</a></h2>
+        <h2><a href="contact-us.html">Contact Us</a></h2>
+        <h2><a href="cart.html">Cart</a></h2>
+        <h2><a href="index-fr.html">FR</a></h2>
+      </nav>
+    </header>
+    <body>
+
+    <div class="cart-box-main">
+      <h2>Cart</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="table-main table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Images</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="thumbnail-img">
+                      <a href="#">
+                        <img
+                          class="img-fluid"
+                          src="images/double_cheese_burger.jpg"
+                          alt="double_cheese_burger"
+                        />
+                      </a>
+                    </td>
+                    <td class="name-pr">
+                      <a href="#"> Double CheeseBurger </a>
+                    </td>
+                    <td class="price-pr">
+                      <p>$ 11.00</p>
+                    </td>
+                    <td class="quantity-box">
+                      <input
+                        type="number"
+                        size="4"
+                        value="1"
+                        min="0"
+                        step="1"
+                        class="c-input-text qty text"
+                      />
+                    </td>
+                    <td class="total-pr">
+                      <p>$ 11.00</p>
+                    </td>
+                    <td class="remove-pr">
+                      <a href="#">
+                        <i class="fas fa-times"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="thumbnail-img">
+                      <a href="#">
+                        <img
+                          class="img-fluid"
+                          src="images/grilled_chicken.jpg"
+                          alt="grilled_chicken"
+                        />
+                      </a>
+                    </td>
+                    <td class="name-pr">
+                      <a href="#"> Grilled Chicken </a>
+                    </td>
+                    <td class="price-pr">
+                      <p>$ 14.00</p>
+                    </td>
+                    <td class="quantity-box">
+                      <input
+                        type="number"
+                        size="4"
+                        value="1"
+                        min="0"
+                        step="1"
+                        class="c-input-text qty text"
+                      />
+                    </td>
+                    <td class="total-pr">
+                      <p>$ 14.00</p>
+                    </td>
+                    <td class="remove-pr">
+                      <a href="#">
+                        <i class="fas fa-times"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="thumbnail-img">
+                      <a href="#">
+                        <img
+                          class="img-fluid"
+                          src="images/lemonsoda.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </td>
+                    <td class="name-pr">
+                      <a href="#"> Lemon Soda </a>
+                    </td>
+                    <td class="price-pr">
+                      <p>$ 2.00</p>
+                    </td>
+                    <td class="quantity-box">
+                      <input
+                        type="number"
+                        size="4"
+                        value="1"
+                        min="0"
+                        step="1"
+                        class="c-input-text qty text"
+                      />
+                    </td>
+                    <td class="total-pr">
+                      <p>$ 2.00</p>
+                    </td>
+                    <td class="remove-pr">
+                      <a href="#">
+                        <i class="fas fa-times"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-lg-6 col-sm-6">
+            <div class="coupon-box">
+              <div class="input-group input-group-sm">
+                <input
+                  class="form-control"
+                  placeholder="Enter your coupon code"
+                  aria-label="Coupon code"
+                  type="text"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-theme" type="button">
+                    Apply Coupon
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="update-box">
+              <input value="Update Cart" type="submit" />
+            </div>
+          </div>
+        </div>
+
+        <!-----video------------>
+
+        <video width="400" height="700" preload="metadata" controls autoplay loop >
+            <source src="video/pexels-darlene-alderson-7039149 (3).mp4" type="video/mp4">
+        </video>
+
+        <!----order summary------->
+
+        <div class="row my-5">
+          <div class="col-lg-8 col-sm-12"></div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="order-box">
+              <h3>Order summary</h3>
+              <div class="d-flex">
+                <h4>Sub Total</h4>
+                <div class="ml-auto font-weight-bold">$ 27.00</div>
+              </div>
+              <div class="d-flex">
+                <h4>Discount</h4>
+                <div class="ml-auto font-weight-bold">$ 3</div>
+              </div>
+              <hr class="my-1" />
+              <div class="d-flex">
+                <h4>Coupon Discount</h4>
+                <div class="ml-auto font-weight-bold">$ 5</div>
+              </div>
+              <div class="d-flex">
+                <h4>Tax</h4>
+                <div class="ml-auto font-weight-bold">$ 3</div>
+              </div>
+              <hr />
+              <div class="d-flex gr-total">
+                <h5>Grand Total</h5>
+                <div class="ml-auto h5">$ 35</div>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div class="col-12 d-flex shopping-box">
+            <a href="checkout.html" class="ml-auto btn hvr-hover">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div></main>
+</form> 
+<div id="appdownloadleft">
+<a href="https://www.apple.com/ca/app-store/"><img id="appstore" src="images/App-Store-resized.jpg"
+        alt="Download our app on App Store" /></a>
+</div>
+<div id="appdownloadright">
+<a href="https://play.google.com/"><img id="googleplay" src="images/Google-Play-resized.png"
+    alt="Download our app on Google Play" /></a>
+</div>
+
+
+
+<footer>
+<h2>About Us</h2>
+<h2>Privacy Policy</h2>
+<h2>Terms &amp; Conditions</h2>
+<h2>FAQs</h2>
+<h2>Delivery</h2>
+<h3>&copy;2021 Los Pollos Hermanos'. All Rights Reserved.</h3>
+</footer>
+
+
+  </body>
+  
+</html>
