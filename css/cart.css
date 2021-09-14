@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/* Purpose: CSS document for order page */
+/* Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang */
+/* Script Date: September 12, 2021 */
+
+.cart-box-main {
+  background-image: url(/images/background.jpg);
+  color: #e09f3e;
+  font-family: "Lemon", cursive;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  padding-bottom: 80px;
+}
+
+.cart-box-main h2 {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 24px;
+}
+.img-fluid {
+  width: 150px;
+  height: 100px;
+}
+
+.table {
+  margin-left: 100px;
+  text-align: center;
+}
+
+.table thead th {
+  font-size: 16px;
+  background-color: #9e2a2b;
+  height: 10px;
+  width: 140px;
+}
+
+.name-pr a {
+  color: #e09f3e;
+}
+.remove-pr a:link {
+  color: #e09f3e;
+}
+input[type="number"] {
+  font-size: 24px;
+  font-weight: 600;
+  width: 150px;
+}
+
+.coupon-box {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+input[type="text"] {
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+  height: 45px;
+  border-radius: 5px;
+}
+:-ms-input-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-group-append {
+  margin-left: 210px;
+  margin-top: -50px;
+  border-radius: 5px;
+}
+button {
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #e09f3e;
+}
+.update-box {
+  margin-left: 900px;
+  margin-top: -50px;
+}
+input[type="submit"] {
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
+  height: 45px;
+  background-color: #e09f3e;
+  border-radius: 5px;
+}
+video {
+  margin-left: 100px;
+  margin-top: -100px;
+}
+
+.order-box {
+  margin-top: -550px;
+  margin-left: 700px;
+  margin-right: 100px;
+}
+
+.d-flex div {
+  float: right;
+  margin-top: -45px;
+}
+
+.shopping-box {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  margin-right: 100px;
+  margin-left: 1000px;
+  background-color: #e09f3e;
+  width: 100px;
+  text-align: center;
+}
+.shopping-box a:link {
+  color: black;
+  text-decoration: none;
+}
+
+#appdownloadleft {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+#appdownloadleft {
+  float: right;
+  width: 50%;
+  height: auto;
+}
+
+#appstore {
+  position: relative;
+  margin-top: -10px;
+  bottom: 8px;
+  padding-left: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#googleplay {
+  position: relative;
+  bottom: 8px;
+  display: block;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #9e2a2b;
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+
+footer h2 {
+  display: inline;
+  margin-right: auto;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+
+  color: white;
+}
+
+footer h3 {
+  padding-bottom: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 10px;
+  color: white;
+}
