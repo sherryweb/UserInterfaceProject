@@ -13,13 +13,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap');
         </style> 
-          <!-- CSS Libraries eStore -->
+          <!-- CSS Libraries  -->
           <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-          <link href="lib/slick/slick.css" rel="stylesheet">
-          <link href="lib/slick/slick-theme.css" rel="stylesheet">
-  
-          <!-- Template Stylesheet  eStore-->
+    
           <link href="css/checkout.css" rel="stylesheet">
 </head>
 
@@ -151,13 +147,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="payment-method">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="payment-3" name="payment">
-                                        <label class="custom-control-label" for="payment-3">Paypal</label>
-                                    </div>
-                                   
-                                </div>
+                               
                                
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -174,12 +164,12 @@
                                 <div class="row">
                                     <div class="col-md-3 mb-3">
                                         <label for="cc-expiration">Expiration</label>
-                                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM/YY" required>
                                         <div class="invalid-feedback"> Expiration date required </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <label for="cc-expiration">CVV</label>
-                                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                        <input type="text" class="form-control" id="cc-cvv" placeholder="3 or 4 digit number" required>
                                         <div class="invalid-feedback"> Security code required </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -188,8 +178,6 @@
                                                 <li><img class="img-fluid" src="images/payment-icon/1.png" alt=""></li>
                                                 <li><img class="img-fluid" src="images/payment-icon/2.png" alt=""></li>
                                                 <li><img class="img-fluid" src="images/payment-icon/3.png" alt=""></li>
-                                                <li><img class="img-fluid" src="images/payment-icon/5.png" alt=""></li>
-                                                <li><img class="img-fluid" src="images/payment-icon/7.png" alt=""></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -205,8 +193,8 @@
                     <div class="checkout-inner">
                         <div class="checkout-summary">
                             <h1>Cart Total</h1>
-                            <p>Product Name<span>$99</span></p>
                             <p class="sub-total">Sub Total<span>$99</span></p>
+                            <p class="sub-tax">Tax<span>$1</span></p>
                             <p class="ship-cost">Shipping Cost<span>$1</span></p>
                             <h2>Grand Total<span>$100</span></h2>
                         </div>
@@ -231,7 +219,7 @@
 
                                 <div class="control-group">
                                     <div class="input-group date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                        <input type="date" class="form-control datetimepicker-input" placeholder="" data-target="#date" data-toggle="datetimepicker"/>
                                         <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
                                             <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                         </div>
@@ -240,13 +228,16 @@
                                 
                                 <div class="control-group">
                                     <div class="input-group time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <input type="time" class="form-control datetimepicker-input" placeholder="" data-target="#time" data-toggle="datetimepicker"/>
                                         <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
                                             <div class="input-group-text"><i class="far fa-clock"></i></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                         
+                            
                             <div class="checkout-btn">
                                 <button>Place Order</button>
                             </div>
@@ -259,6 +250,8 @@
     <!-- Checkout End -->
        
    
+
+    
     <!-- same content with index  -->
     <div id="appdownloadleft">
         <a href="https://www.apple.com/ca/app-store/"><img id="appstore" src="images/App-Store-resized.jpg"
@@ -283,11 +276,6 @@
     </footer>
      <!-- JavaScript Libraries -->
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-     <script src="lib/easing/easing.min.js"></script>
-     <script src="lib/slick/slick.min.js"></script>
-     
-     <!-- Template Javascript -->
      <script src="js/checkout.js"></script>
 </body>
 

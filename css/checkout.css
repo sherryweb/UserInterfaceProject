@@ -175,6 +175,7 @@ nav h2 a {
     padding: 10px 0px;
 }
 .payment-icon ul li {
+    list-style-type: none;
     width: 20%;
     float: left;
 }

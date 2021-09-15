@@ -1,13 +1,6 @@
 (function ($) {
   "use strict";
   
- // time picker
- $('.time').pickatime({
-    min: [7,30],
-    max: [14,0]
-  })
-
-  //https://amsul.ca/pickadate.js/time/#translations
 
      // Shipping address show hide
      $('.checkout #shipto').change(function () {
