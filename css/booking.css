@@ -137,6 +137,15 @@ nav h2 a {
     border: 1px solid #ffffff;
 }
 
+.booking .booking-form .btn.custom-btn:hover {
+    color: #ffffff;
+    background: transparent;
+}
+
+.booking .booking-form .input-group [data-toggle="datetimepicker"] {
+    cursor: default;
+}
+
 /* For desktop: 
 .col-lg-5 {width:30%}
 .col-lg-7 {width:70%}

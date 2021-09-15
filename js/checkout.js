@@ -1,6 +1,5 @@
 (function ($) {
   "use strict";
-  
 
      // Shipping address show hide
      $('.checkout #shipto').change(function () {
