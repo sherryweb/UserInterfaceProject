@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  
     
     <header>
         <img src="images/Los_Pollos_Hermanos_logo.png" alt="Logo of Los Pollos Hermanos" />
@@ -36,100 +37,14 @@
     </header>
 
     <!-- Checkout Start -->
+    <form name="form1" id="form1" method="post" action="checkoutDone.html"
+    onsubmit="return validateForm();" onreset="location.reload();" >
     <main class="checkout">
+
         <div class="container-fluid"> 
             <div class="row">
                 <div class="col-lg-8">
                     <div class="checkout-inner">
-                        <div class="billing-address">
-                            <h2>Billing Address</h2>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>First Name</label>
-                                    <input class="form-control" type="text" placeholder="First Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Last Name</label>
-                                    <input class="form-control" type="text" placeholder="Last Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>E-mail</label>
-                                    <input class="form-control" type="text" placeholder="E-mail">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Mobile No</label>
-                                    <input class="form-control" type="text" placeholder="Mobile No">
-                                </div>
-                                <div class="col-md-12">
-                                    <label>Address</label>
-                                    <input class="form-control" type="text" placeholder="Address">
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label>City</label>
-                                    <input class="form-control" type="text" placeholder="City">
-                                </div>
-                              
-                                <div class="col-md-6">
-                                    <label>ZIP Code</label>
-                                    <input class="form-control" type="text" placeholder="ZIP Code">
-                                </div>
-                               
-                               
-                                <div class="col-md-12">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="save-info">
-                                        <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="shipto">
-                                        <label class="custom-control-label" for="shipto">Ship to different address</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end billing address-->
-
-                        <div class="shipping-address">
-                            <h2>Shipping Address</h2>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>First Name</label>
-                                    <input class="form-control" type="text" placeholder="First Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Last Name</label>
-                                    <input class="form-control" type="text" placeholder="Last Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>E-mail</label>
-                                    <input class="form-control" type="text" placeholder="E-mail">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Mobile No</label>
-                                    <input class="form-control" type="text" placeholder="Mobile No">
-                                </div>
-                                <div class="col-md-12">
-                                    <label>Address</label>
-                                    <input class="form-control" type="text" placeholder="Address">
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label>City</label>
-                                    <input class="form-control" type="text" placeholder="City">
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label>ZIP Code</label>
-                                    <input class="form-control" type="text" placeholder="ZIP Code">
-                                </div>
-                            </div>
-                        </div><!--end shipping address-->
-
-
-
-
                         <!-- strat payment method -->
                         <hr class="mb-4">
                             <div class="payment-methods">
@@ -246,7 +161,9 @@
                 </div>
             </div>
         </div>
+
 </main>
+</form>
     <!-- Checkout End -->
        
    
@@ -274,6 +191,7 @@
      <!-- JavaScript Libraries -->
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
      <script src="js/checkout.js"></script>
+  
 </body>
 
 </html>
