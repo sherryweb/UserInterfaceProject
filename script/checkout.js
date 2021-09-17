@@ -18,12 +18,13 @@
             $('#' + checkbox_id + '-show').slideDown();
         }
     });
-
-    //$('.timepicker').pickatime({
-    //    min: [10,30],
-     //   max: [22,00]
-     // })
 })(jQuery);
+
+
+ //$('.timepicker').pickatime({
+    //    min: [10,30],
+    //   max: [22,00]
+    // })
 
 
 function validateForm() {
