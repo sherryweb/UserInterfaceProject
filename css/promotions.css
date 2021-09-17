@@ -7,244 +7,349 @@
 body {
     margin: auto;
     max-width: 1200px;
-    min-width: 800px;    
-}
-
-#mainHeading{
-    text-align: center;
-    color: white;  
-    font-family: 'Lemon', cursive;  
-}
-
-#leftSidebar{
-    background-color: #FFF3B0;
+    min-width: 800px;
+  }
+  
+  header {
+    background-color: #540b0e;
+    height: 200px;
+  }
+  
+  header img {
+    width: 150px;
+    position: relative;
+    right: 430px;
+  }
+  #headerimgfr {
+    width: 150px;
+    position: relative;
+    right: 290px;
+  }
+  
+  header h1 {
+    float: left;
+    position: relative;
+    left: 5em;
+    top: 30px;
+    font-family: "Special Elite", cursive;
     color: white;
-    background-image: url(/images/background.jpg);
-    padding-top: 10px;
-    width:25%;
-    height:69%;   
-    float: left;
-}
-
-.drinkPic{
-    width: 80%;
-    height: 100%;
-    margin: 0 20px;
-}
-
-.sidebarHeading{
+    font-size: 2.6em;
+  }
+  
+  header nav {
+    background-color: #e09f3e;
+    height: 50px;
     text-align: center;
-    font-size: x-large;
-}
-#mainContent{
-    height:690px;   
-    width: 50%;
-    background-color:#E09F3E;
-    float: left;
-    color: black;
+  }
+  
+  nav h2 {
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
-    padding-top: 10px;
-}
-
-#rightSidebar{
-    background-image:url("/images/background.jpg");
+    padding: 25px;
+    position: relative;
+    top: 8px;
+    font-family: "Lemon", cursive;
     font-size: large;
-    padding-top: 10px;
-    color: white;
-    width:25%;
-    height:69%;      
-    float: right;
+  }
+  
+  nav h2:hover {
+    background-color: #540b0e;
+  }
+  
+  nav h2 a:hover {
+    color: #e09f3e;
+  }
+  
+  nav h2 a {
+    text-decoration: none;
+    color: #540b0e;
+  }
+
+#mainHeading {
+  text-align: center;
+  color: white;
+  font-family: "Lemon", cursive;
+}
+#timeHeading {
+  color: rgb(0, 183, 255);
+  font-size: 24px;
+  margin-left: 995px;
+  margin-top: -160px;
+}
+div#dateNow {
+  display: block;
+  margin-top: -15px;
+  margin-left: 1000px;
+  border: hidden;
+  color: rgb(0, 183, 255);
+  width: 200px;
+  font-size: 24px;
+  line-height: 1.1em;
+  font-weight: 600;
+}
+main {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  margin-bottom: 16px;
+  height: 950px;
+}
+
+#leftSidebar {
+  color: white;
+  padding-top: 10px;
+  width: 25%;
+  float: left;
+}
+
+.drinkPic {
+  width: 80%;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.sidebarHeading {
+  text-align: center;
+  font-size: x-large;
+}
+#mainContent {
+  height: 850px;
+  width: 50%;
+  background-color: #e09f3e;
+  float: left;
+  color: black;
+  text-align: center;
+  margin-top:24px;
+}
+div#countdown {
+    position: relative;
+    left:100px;
+    width:70%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+ }
+ 
+ div#countdown div {
+    display: block;
     text-align: center;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 20px;
+    font-family: segment14, sans-serif;
+    color: #540b0e;
+    margin-top:35px;
+    text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 
+                 1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
+ }
+ 
+ div#countdown div span {
+    font-size: 2em;   
+    color:black;
+    font-style:normal;
+ }
+
+#rightSidebar {
+  font-size: large;
+  padding-top: 10px;
+  color: white;
+  width: 25%;
+  height: 69%;
+  float: right;
+  text-align: center;
 }
 
-div span {
-    color: white;
+div h1 span {
+  background-color: #540b0e;
+  display: inline-block;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  margin-right: 10px;
 }
 
-span {
-    background-color: #540B0E;    
-    display: inline-block;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    
-    padding-top: 10px;
-    margin-right: 10px;
+#veganBurgerPic {
+  width: 90%;
+  height: fit-content;
 }
 
-#veganBurgerPic{
-    width: 90%;
-    height: fit-content;
+
+
+#phonePic {
+  width: 90%;
+  height: 100%;
+  margin: 0 -15px;
 }
 
-#container{
-    background-image: url(/images/background.jpg);
-    height: 1000px;
+aside h2 {
+  padding: 10px;
 }
 
-#phonePic{
-    width:90%;
-    height: 100%;
-    margin: 0 -15px;
+main h3 {
+  padding: 15px 0;
 }
+main h4 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family:"Lemon", cursive; 
+    color:#540b0e;
+  }
 
-aside h2{
-    padding: 10px;
-}
-
-main h3{
-    padding: 15px 0
-}
 
 #appdownload {
-    padding-top: 350px;
+    position: relative;
+    margin-top: 25px;
+    margin-left:30px;
 }
 
 #appstore {
-    padding-right: 23px;
-}
-
-#googleplay {
     padding-top: 20px;
 }
 
+#googleplay {
+  padding-top: 20px;
+}
+#promotion_sale{
+    position: relative;
+    margin-left:20px;
+}
 footer {
-    background-color: #9E2A2B;
+    background-color: #9e2a2b;
     text-align: center;
     position: relative;
-    bottom: 0px;
-}
-
-footer h2 {
+    margin-top:-18px;
+    padding: 10px;
+  }
+  
+  footer h2 {
     display: inline;
     margin-right: auto;
-    text-align: center;
     padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
     font-size: 12px;
-    left: 80px;
     color: white;
-}
-
-footer h3 {
-    text-align: center;
-    padding-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  footer h3 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
     font-size: 10px;
     color: white;
-}
-#frSpan{
+  }
+  
+
+
+
+
+
+
+  
+
+
+
+/*@media screen and (max-width: 400px) {
+  .drinkPic {
+    height: 160px;
+  }
+  #leftSidebar {
+    width: 25%;
+  }
+  #rightSidebar {
+    width: 25%;
+  }
+  .sidebarHeading {
+    font-size: large;
+  }
+  #mainContent {
+    width: 50%;
+    height: 500px;
+    font-size: small;
+  }
+  body {
+    width: 400px;
+  }
+  #frSpan {
     font-size: x-large;
-    background-color: #540B0E;    
-    display: inline-block;
-    border-radius: 50%;
-    width: 90px;
-    height: 75px;
-    text-align: center;
-    
-    padding-top: 15px;
-    margin-right: 10px;
-}
-@media screen and (max-width:400px) {
- .drinkPic{
-    height:160px;
- }  
- #leftSidebar{
-     width:25%
- }
- #rightSidebar{
-     width:25%;
-     
- }
- .sidebarHeading{
-     font-size: large;
- }
- #mainContent{
-     width:50%;
-     height:500px;
-     font-size: small;
- }
- body{
-     width:400px;
- }
- #frSpan{
-    font-size: x-large;
-    background-color: #540B0E;    
+    background-color: #540b0e;
     display: inline-block;
     border-radius: 50%;
     width: 85px;
     height: 85px;
     text-align: center;
-    
+
     padding-top: 15px;
     margin-right: 10px;
-}
-span {
-    background-color: #540B0E;    
+  }
+  span {
+    background-color: #540b0e;
     display: inline-block;
     border-radius: 50%;
     width: 65px;
     height: 65px;
     text-align: center;
-    
+
     padding-top: 10px;
     margin-right: 10px;
+  }
+  #veganBurgerPic {
+    height: 200px;
+  }
 }
-#veganBurgerPic{
-    height:200px;
-}
-}
-@media screen and (min-width: 401px) and (max-width: 768px)  {
- .drinkPic{
-    height:200px;
-    width:100px;
- }  
- #leftSidebar{
-     width:25%
- }
- #rightSidebar{
-     width:25%;
-     
- }
- .sidebarHeading{
-     font-size: large;
- }
- #mainContent{
-     width:50%;
-     height:580px;
-     font-size: small;
- }
- body{
-     width:400px;
- }
- #frSpan{
+/*@media screen and (min-width: 401px) and (max-width: 768px) {
+  .drinkPic {
+    height: 200px;
+    width: 100px;
+  }
+  #leftSidebar {
+    width: 25%;
+  }
+  #rightSidebar {
+    width: 25%;
+  }
+  .sidebarHeading {
+    font-size: large;
+  }
+  #mainContent {
+    width: 50%;
+    height: 580px;
+    font-size: small;
+  }
+  body {
+    width: 400px;
+  }
+  #frSpan {
     font-size: x-large;
-    background-color: #540B0E;    
+    background-color: #540b0e;
     display: inline-block;
     border-radius: 50%;
     width: 85px;
     height: 85px;
     text-align: center;
-    
+
     padding-top: 15px;
     margin-right: 10px;
-}
-span {
-    background-color: #540B0E;    
+  }
+  span {
+    background-color: #540b0e;
     display: inline-block;
     border-radius: 50%;
     width: 70px;
     height: 70px;
     text-align: center;
-    
+
     padding-top: 10px;
     margin-right: 10px;
-}
-#veganBurgerPic{
-    height:200px;
-}
-
-
-
+  }
+  #veganBurgerPic {
+    height: 200px;
+  }
 }
