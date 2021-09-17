@@ -112,27 +112,36 @@ function placeOrderClicked() {
     cartItems.removeChild(cartItems.firstChild);
   }
   updateCartTotal();
-  window.location.href='cartnew.html';
+  window.location.href='checkout.html';
 }
+
+/*********************************** Ajax for button click ***********************************/
+
+
+
+
+
+
+
 
 
 /*********************************** JS for cart page,another solution ***********************************/
 
-let itemsArray = localStorage.getItem('btnitems') ? JSON.parse(localStorage.getItem('btnitems')) : [];
-localStorage.setItem('btnitems', JSON.stringify(itemsArray));
+// let itemsArray = localStorage.getItem('btnitems') ? JSON.parse(localStorage.getItem('btnitems')) : [];
+// localStorage.setItem('btnitems', JSON.stringify(itemsArray));
 
 
-window.onload=function(){
-    var addbtnlist=document.getElementsByTagName('button');
-    var length=addbtnlist.length;
-    for(var i=0;i<length;i++){
-        var btn=addbtnlist[i];
-        btn.index=i;
-        btn.onclick=function(){
-            alert(this.index+1);
-        }
-    }
-}
+// window.onload=function(){
+//     var addbtnlist=document.getElementsByTagName('button');
+//     var length=addbtnlist.length;
+//     for(var i=0;i<length;i++){
+//         var btn=addbtnlist[i];
+//         btn.index=i;
+//         btn.onclick=function(){
+//             alert(this.index+1);
+//         }
+//     }
+// }
 
 // addbtn.addEventListener('click', function (e) {
 //     e.preventDefault();
