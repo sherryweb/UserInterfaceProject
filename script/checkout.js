@@ -19,10 +19,10 @@
         }
     });
 
-    $('.timepicker').pickatime({
-        min: [10,30],
-        max: [22,00]
-      })
+    //$('.timepicker').pickatime({
+    //    min: [10,30],
+     //   max: [22,00]
+     // })
 })(jQuery);
 
 
