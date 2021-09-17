@@ -12,15 +12,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap');
-        </style> 
-          <!-- CSS Libraries  -->
-          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    
-          <link href="css/checkout.css" rel="stylesheet">
+    </style>
+    <!-- CSS Libraries  -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/checkout.css" rel="stylesheet">
 </head>
 
 <body>
-    
     <header>
         <img src="images/Los_Pollos_Hermanos_logo.png" alt="Logo of Los Pollos Hermanos" />
         <h1>Fast-food restaurant</h1>
@@ -36,102 +35,98 @@
     </header>
 
     <!-- Checkout Start -->
-    <main class="checkout">
-        <div class="container-fluid"> 
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="checkout-inner">
-                        <div class="billing-address">
-                            <h2>Billing Address</h2>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>First Name</label>
-                                    <input class="form-control" type="text" placeholder="First Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Last Name</label>
-                                    <input class="form-control" type="text" placeholder="Last Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>E-mail</label>
-                                    <input class="form-control" type="text" placeholder="E-mail">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Mobile No</label>
-                                    <input class="form-control" type="text" placeholder="Mobile No">
-                                </div>
-                                <div class="col-md-12">
-                                    <label>Address</label>
-                                    <input class="form-control" type="text" placeholder="Address">
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label>City</label>
-                                    <input class="form-control" type="text" placeholder="City">
-                                </div>
-                              
-                                <div class="col-md-6">
-                                    <label>ZIP Code</label>
-                                    <input class="form-control" type="text" placeholder="ZIP Code">
-                                </div>
-                               
-                               
-                                <div class="col-md-12">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="save-info">
-                                        <label class="custom-control-label" for="save-info">Save this information for next time</label>
+    <form  name="checkoutform" id="checkoutform" action="checkoutDone.html" onsubmit="return validateForm();"
+    onreset="location.reload();">
+        <main class="checkout">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="checkout-inner">
+                            <div class="billing-address">
+                                <h2>Billing Address</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>First Name</label>
+                                        <input class="form-control" type="text" placeholder="First Name" id="firstNameBilling">
                                     </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="shipto">
-                                        <label class="custom-control-label" for="shipto">Ship to different address</label>
+                                    <div class="col-md-6">
+                                        <label>Last Name</label>
+                                        <input class="form-control" type="text" placeholder="Last Name" id="lastNameBilling">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>E-mail</label>
+                                        <input class="form-control" type="email" placeholder="abc@abc.com" id="emailBilling">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Mobile No</label>
+                                        <input class="form-control" type="text" placeholder="514-123-6666" id="mobileNumberBilling">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>Address</label>
+                                        <input class="form-control" type="text" placeholder="Address" id="addressBilling">
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <label>City</label>
+                                        <input class="form-control" type="text" placeholder="Montreal" id="cityBilling">
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <label>Postal Code</label>
+                                        <input class="form-control" type="text" placeholder="J1X 1B2" id="postalcodeBilling">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="shipto">
+                                            <label class="custom-control-label" for="shipto">Ship to different
+                                                address</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div><!--end billing address-->
-
-                        <div class="shipping-address">
-                            <h2>Shipping Address</h2>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>First Name</label>
-                                    <input class="form-control" type="text" placeholder="First Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Last Name</label>
-                                    <input class="form-control" type="text" placeholder="Last Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>E-mail</label>
-                                    <input class="form-control" type="text" placeholder="E-mail">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Mobile No</label>
-                                    <input class="form-control" type="text" placeholder="Mobile No">
-                                </div>
-                                <div class="col-md-12">
-                                    <label>Address</label>
-                                    <input class="form-control" type="text" placeholder="Address">
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label>City</label>
-                                    <input class="form-control" type="text" placeholder="City">
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label>ZIP Code</label>
-                                    <input class="form-control" type="text" placeholder="ZIP Code">
+                            <!--end billing address-->
+    
+                            <div class="shipping-address">
+                                <h2>Shipping Address</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>First Name</label>
+                                        <input class="form-control" type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Last Name</label>
+                                        <input class="form-control" type="text" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>E-mail</label>
+                                        <input class="form-control" type="text" placeholder="E-mail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Mobile No</label>
+                                        <input class="form-control" type="text" placeholder="Mobile No">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>Address</label>
+                                        <input class="form-control" type="text" placeholder="Address">
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <label>City</label>
+                                        <input class="form-control" type="text" placeholder="City">
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <label>ZIP Code</label>
+                                        <input class="form-control" type="text" placeholder="ZIP Code">
+                                    </div>
                                 </div>
                             </div>
-                        </div><!--end shipping address-->
-
-
-
-
-                        <!-- strat payment method -->
-                        <hr class="mb-4">
+                            <!--end shipping address-->
+    
+    
+                            <!-- strat payment method -->
+                            <hr class="mb-4">
                             <div class="payment-methods">
                                 <h2>Payment Methods</h2>
                                 <div class="payment-method">
@@ -145,31 +140,33 @@
                                         <input type="radio" class="custom-control-input" id="payment-2" name="payment">
                                         <label class="custom-control-label" for="payment-2">Debit card</label>
                                     </div>
-                                    
+    
                                 </div>
-                               
-                               
+    
+    
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="cc-name">Name on card</label>
-                                        <input type="text" class="form-control" id="cc-name" placeholder="" required> <small class="text-muted">Full name as displayed on card</small>
+                                        <input type="text" class="form-control" id="cc-name" placeholder=""> <small
+                                            class="text-muted">Full name as displayed on card</small>
                                         <div class="invalid-feedback"> Name on card is required </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="cc-number">Credit card number</label>
-                                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                        <input type="text" class="form-control" id="cc-number" placeholder="">
                                         <div class="invalid-feedback"> Credit card number is required </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 mb-3">
                                         <label for="cc-expiration">Expiration</label>
-                                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM/YY" required>
+                                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM/YY">
                                         <div class="invalid-feedback"> Expiration date required </div>
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <label for="cc-expiration">CVV</label>
-                                        <input type="text" class="form-control" id="cc-cvv" placeholder="3 or 4 digit number" required>
+                                        <input type="text" class="form-control" id="cc-cvv"
+                                            placeholder="3 or 4 digit number" >
                                         <div class="invalid-feedback"> Security code required </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
@@ -183,75 +180,78 @@
                                     </div>
                                 </div>
                             </div>
-                        <!--end payment method-->
-
-
-
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="checkout-inner">
-                        <div class="checkout-summary">
-                            <h1>Cart Total</h1>
-                            <p class="sub-total">Sub Total<span>$99</span></p>
-                            <p class="sub-tax">Tax<span>$1</span></p>
-                            <p class="ship-cost">Shipping Cost<span>$1</span></p>
-                            <h2>Grand Total<span>$100</span></h2>
+                            <!--end payment method-->
+    
+    
                         </div>
-
-                        <div class="checkout-payment">
-                            <div class="payment-methods">
-                                <h1>Delivery Method</h1>
-                                <div class="payment-method">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="delivery-1" name="delivery">
-                                        <label class="custom-control-label" for="delivery-1">Pickup</label>
-                                    </div>
-                                   
-                                </div>
-                                <div class="payment-method">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="delivery-2" name="delivery">
-                                        <label class="custom-control-label" for="delivery-2">Delivery</label>
-                                    </div>
-                                </div>
-                                <br />
-
-                                <div class="control-group">
-                                    <div class="input-group date" id="date" data-target-input="nearest">
-                                        <input type="date" class="form-control datetimepicker-input"  data-target="#date" data-toggle="datetimepicker"/>
-                                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="control-group">
-                                    <div class="input-group time" id="time" data-target-input="nearest">
-                                        <input type="time" class="form-control datetimepicker-input"  data-target="#time" data-toggle="datetimepicker"/>
-                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="checkout-inner">
+                            <div class="checkout-summary">
+                                <h1>Cart Total</h1>
+                                <p class="sub-total">Sub Total<span>$99</span></p>
+                                <p class="sub-tax">Tax<span>$1</span></p>
+                                <p class="ship-cost">Shipping Cost<span>$1</span></p>
+                                <h2>Grand Total<span>$100</span></h2>
                             </div>
-
-                         
-                            
-                            <div class="checkout-btn">
-                                <button>Place Order</button>
+    
+                            <div class="checkout-payment">
+                                <div class="payment-methods">
+                                    <h1>Delivery Method</h1>
+                                    <div class="payment-method">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="delivery-1"
+                                                name="delivery">
+                                            <label class="custom-control-label" for="delivery-1">Pickup</label>
+                                        </div>
+    
+                                    </div>
+                                    <div class="payment-method">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="delivery-2"
+                                                name="delivery">
+                                            <label class="custom-control-label" for="delivery-2">Delivery</label>
+                                        </div>
+                                    </div>
+                                    <br />
+    
+                                    <div class="control-group">
+                                        <div class="input-group date" id="date" data-target-input="nearest">
+                                            <input type="date" class="form-control datetimepicker-input" data-target="#date"
+                                                data-toggle="datetimepicker" />
+                                            <div class="input-group-append" data-target="#date"
+                                                data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="control-group">
+                                        <div class="input-group time" id="time" data-target-input="nearest">
+                                            <input type="time" class="form-control datetimepicker-input" data-target="#time"
+                                                data-toggle="datetimepicker" />
+                                            <div class="input-group-append" data-target="#time"
+                                                data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="checkout-btn">
+                                    <button>Place Order</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-</main>
-    <!-- Checkout End -->
-       
+        </main>
+        <!-- Checkout End -->
+    </form>
    
 
-    
     <!-- same content with index  -->
     <div id="appdownloadleft">
         <a href="https://www.apple.com/ca/app-store/"><img id="appstore" src="images/App-Store-resized.jpg"
@@ -259,10 +259,9 @@
     </div>
     <div id="appdownloadright">
         <a href="https://play.google.com/"><img id="googleplay" src="images/Google-Play-resized.png"
-            alt="Download our app on Google Play" /></a>
+                alt="Download our app on Google Play" /></a>
     </div>
 
-    
     <footer>
         <h2>About Us</h2>
         <h2>Privacy Policy</h2>
@@ -271,9 +270,9 @@
         <h2>Delivery</h2>
         <h3>&copy;2021 Los Pollos Hermanos'. All Rights Reserved.</h3>
     </footer>
-     <!-- JavaScript Libraries -->
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-     <script src="js/checkout.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script/checkout.js"></script>
 </body>
 
 </html>
