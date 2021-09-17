@@ -4,243 +4,266 @@
 /* Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang */
 /* Script Date: September 12, 2021 */
 
-
 /*******************************/
 /********* Index CSS *********/
 /*******************************/
 
 body {
-    margin: auto;
-    max-width: 1200px;
-    min-width: 800px;
-    max-height: 1685px;
-    box-shadow: #ddbdbd 0.5em 0.8em 1em;
+  margin: auto;
+  max-width: 1200px;
+  min-width: 800px;
+  max-height: 1685px;
+  box-shadow: #ddbdbd 0.5em 0.8em 1em;
 }
 
 header {
-    background-color: #540B0E;
-    height: 200px;
+  background-color: #540b0e;
+  height: 200px;
 }
 
 header img {
-    width: 150px;
-    position: relative;
-    right: 430px;
+  width: 150px;
+  position: relative;
+  right: 430px;
 }
 
 #headerimgfr {
-    position: relative;
-    right: 290px;
+  position: relative;
+  right: 290px;
 }
 
 header h1 {
-    float: left;
-    position: relative;
-    left: 5em;
-    top: 30px;
-    font-family: 'Special Elite', cursive;
-    color: white;
-    font-size: 2.6em;
+  float: left;
+  position: relative;
+  left: 5em;
+  top: 30px;
+  font-family: "Special Elite", cursive;
+  color: white;
+  font-size: 2.6em;
 }
 
 header nav {
-    background-color: #E09F3E;
-    height: 50px;
-    text-align: center;
+  background-color: #e09f3e;
+  height: 50px;
+  text-align: center;
 }
 
 nav h2 {
-    display: inline;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    top: 8px; 
-    font-family: 'Lemon', cursive;
-    font-size: large;
+  display: inline;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  top: 8px;
+  font-family: "Lemon", cursive;
+  font-size: large;
 }
 
 nav h2:hover {
-    background-color: #540B0E;
+  background-color: #540b0e;
 }
 
 nav h2 a:hover {
-    color: #E09F3E;
+  color: #e09f3e;
 }
 
 nav h2 a {
-    text-decoration: none;
-    color: #540B0E;
+  text-decoration: none;
+  color: #540b0e;
 }
 
 div h3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#timeHeading {
+  color: rgb(0, 183, 255);
+  font-size: 24px;
+  margin-left: 995px;
+  margin-top: -160px;
+}
+div#dateNow {
+  display: block;
+  margin-top: -15px;
+  margin-left: 1000px;
+  border: hidden;
+  color: rgb(0, 183, 255);
+  width: 200px;
+  font-size: 24px;
+  line-height: 1.1em;
+  font-weight: 600;
 }
 
 #mainburguerimg {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 #mainburguertext {
-    color: white;
-    display: flex;
-    position: relative;
-    bottom: 450px;
-    left: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+  color: white;
+  display: flex;
+  position: relative;
+  bottom: 450px;
+  left: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
 }
 
 #menuburguers {
-    position: relative;
-    bottom: 134px;
-    height: auto;
+  position: relative;
+  bottom: 134px;
+  height: auto;
 }
 
 #leftmenu {
-    float: left;
-    width: 50%;
-    height: auto;
+  float: left;
+  width: 50%;
+  height: auto;
 }
 
 #rightmenu {
-    float: right;
-    width: 50%;
-    height: auto;
+  float: right;
+  width: 50%;
+  height: auto;
 }
 
 #burguer1img {
-    background-color: #FFF3B0;
-    position: relative;
-    width: 90%;
-    height: auto;
-    padding: 30px;
+  background-color: #fff3b0;
+  position: relative;
+  width: 90%;
+  height: auto;
+  padding: 30px;
 }
 
 #burguer1txt {
-    position: relative;
-    bottom: 103px;
-    width: 270px;
-    text-align: center;
-    color: white;
-    background-color: rgba(84,11,14,0.7);
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  bottom: 103px;
+  width: 270px;
+  text-align: center;
+  color: white;
+  background-color: rgba(84, 11, 14, 0.7);
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #burguer2img {
-    background-color: #FFF3B0;
-    position: relative;
-    bottom: 115px;
-    width: 90%;
-    height: auto;
-    padding: 30px;
+  background-color: #fff3b0;
+  position: relative;
+  bottom: 115px;
+  width: 90%;
+  height: auto;
+  padding: 30px;
 }
 
 #burguer2txt {
-    position: relative;
-    bottom: 218px;
-    width: 270px;
-    text-align: center;
-    color: white;
-    background-color: rgba(84,11,14,0.7);
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  bottom: 218px;
+  width: 270px;
+  text-align: center;
+  color: white;
+  background-color: rgba(84, 11, 14, 0.7);
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #burguer3img {
-    background-color: #FFF3B0;
-    position: relative;
-    width: 90%;
-    height: auto;
-    padding: 30px;
+  background-color: #fff3b0;
+  position: relative;
+  width: 90%;
+  height: auto;
+  padding: 30px;
 }
 
 #burguer3txt {
-    position: relative;
-    bottom: 103px;
-    width: 270px;
-    text-align: center;
-    color: white;
-    background-color: rgba(84,11,14,0.7);
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  bottom: 103px;
+  width: 270px;
+  text-align: center;
+  color: white;
+  background-color: rgba(84, 11, 14, 0.7);
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #burguer4img {
-    background-color: #FFF3B0;
-    position: relative;
-    bottom: 115px;
-    width: 90%;
-    height: auto;
-    padding: 30px;
+  background-color: #fff3b0;
+  position: relative;
+  bottom: 115px;
+  width: 90%;
+  height: auto;
+  padding: 30px;
 }
 
 #burguer4txt {
-    position: relative;
-    bottom: 218px;
-    width: 270px;
-    text-align: center;
-    color: white;
-    background-color: rgba(84,11,14,0.7);
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  bottom: 218px;
+  width: 270px;
+  text-align: center;
+  color: white;
+  background-color: rgba(84, 11, 14, 0.7);
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #appdownloadleft {
-    float: left;
-    width: 50%;
-    height: auto;
+  float: left;
+  width: 50%;
+  height: auto;
 }
 
 #appdownloadleft {
-    float: right;
-    width: 50%;
-    height: auto;
+  float: right;
+  width: 50%;
+  height: auto;
 }
 
 #appstore {
-    position: relative;
-    bottom: 320px;
-    padding-left: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  bottom: 320px;
+  padding-left: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #googleplay {
-    position: relative;
-    bottom: 320px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  bottom: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
-    background-color: #9E2A2B;
-    text-align: center;
-    position: relative;
-    bottom: 310px;
+  background-color: #9e2a2b;
+  text-align: center;
+  position: relative;
+  bottom: 310px;
 }
 
 footer h2 {
-    display: inline;
-    margin-right: auto;
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 12px;
+  display: inline;
+  margin-right: auto;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
 
-    color: white;
+  color: white;
 }
 
 footer h3 {
-    padding-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 10px;
-    color: white;
+  padding-bottom: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 10px;
+  color: white;
 }
