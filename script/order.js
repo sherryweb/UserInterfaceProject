@@ -29,7 +29,6 @@ function start() {
     btn.addEventListener("click", addToCartEvent);
   }
 
-  document.getElementsByClassName("btn-placeOrder")[0].addEventListener("click", placeOrderClicked);
 }
 
 function removeCartItem(event) {
@@ -107,14 +106,40 @@ function updateCartTotal() {
   document.getElementsByClassName("cart-totalPrice")[0].innerText = "$" + total;
 }
 
-function placeOrderClicked() {
-  var cartNewItems = document.getElementsByClassName("cart-items")[0];
-  while (cartNewItems.hasChildNodes()) {
-    cartNewItems.removeChild(cartNewItems.firstChild);
-  }
-  updateCartTotal();
+
+
+/*********************************** JS for passing data to checkout page ***********************************/
+
+// document.getElementsByClassName("btn-placeOrder")[0].addEventListener("click", placeOrderClicked);
+
+const placeOrderBtn=document.getElementsByClassName("btn-placeOrder"); 
+
+placeOrderBtn.onclick = event => {
+
   window.location.href='checkout.html';
-}
+
+
+  // event.preventDefault();
+  // data = getFormData();
+  // localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
+  // const message = "Form draft has been saved!";
+  // displayAlert(message);
+};
+
+
+
+// function placeOrderClicked() {
+//   var cartNewItems = document.getElementsByClassName("cart-items")[0];
+//   while (cartNewItems.hasChildNodes()) {
+//     cartNewItems.removeChild(cartNewItems.firstChild);
+//   }
+//   updateCartTotal();
+//   window.location.href='checkout.html';
+
+//   const subtotalVal=document.getElementById("subtotalValue");
+//   localStorage.setItem("subtotal",subtotalVal);
+
+// }
 
 /*********************************** Ajax for button click ***********************************/
 
