@@ -18,6 +18,11 @@
             $('#' + checkbox_id + '-show').slideDown();
         }
     });
+
+    $('.timepicker').pickatime({
+        min: [10,30],
+        max: [22,00]
+      })
 })(jQuery);
 
 
@@ -25,9 +30,8 @@ function validateForm() {
     // decalre variables
     let fnameBilling = document.getElementById('firstNameBilling');
     let lnameBilling = document.getElementById('lastNameBilling');
-    let emailBilling = document.getElementById('emailBilling').value;
-    // var emailPattern = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
-    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+    var emailBilling = document.getElementById('emailBilling');
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
     let mobileBilling = document.getElementById("mobileNumberBilling");
     let addressBilling = document.getElementById("addressBilling");
     let cityBilling = document.getElementById("cityBilling");
@@ -49,37 +53,28 @@ function validateForm() {
         window.alert('Please enter your first name');
         fnameBilling.focus();
         return false;
-    } else  // validate last name
-     if (lnameBilling.value.length === 0) {     
+    }  
+     // validate last name
+    else if (lnameBilling.value.length === 0) {     
         window.alert('Please enter your last name');
         lnameBilling.focus();
         return false;
 
      } 
-    // else if (!emailBilling.value.match(emailPattern)) {    
-      //         window.alert("Please correct email address");
-        //        // emailBilling=null;
-          //      emailBilling.focus();
-            //   emailBilling.style.backgroundColor = 'yellow';
-              //  return false;
-
-     //}
-     //else if
-    // (!(emailBilling.match(emailPattern))) {  //validate email
-    // } else if (emailBilling.match(emailPattern)) {    
-    //     window.alert("Please correct email address");
-    //     // emailBilling=null;
-    //     emailBilling.focus();
-    //     emailBilling.style.backgroundColor = 'yellow';
-    //     return false;
-   // }   
-    else if 
+     //validate email address
+    else if (!emailBilling.value.match(emailPattern)) {    
+        window.alert("Please correct email address");
+        // emailBilling=null;
+        emailBilling.focus();
+      //  emailBilling.style.backgroundColor = 'yellow';
+        return false;
+    }   
    //validate mobile no. 
-    (mobileBilling.value.length === 0) {
+   else if  (mobileBilling.value.length === 0) {
         alert("Please enter your phone number");
         mobileBilling.focus();
         // If the user hasn't completed the field, changes its background color to yellow
-        mobileBilling.style.background = "yellow";
+        //mobileBilling.style.background = "yellow";
         return false;
     }
 
@@ -90,11 +85,15 @@ function validateForm() {
         return false;
     }
     //validate city         
-    else if (cityBilling.value.length === 0) { 
-        window.alert('Please enter your city');
+    
+   else if (cityBilling.selectedIndex === 0) {
+        alert("Please select a province.");
         cityBilling.focus();
+        // If the user hasn't completed the field, 
+        // changes its background color to yellow
+       // cityBilling.style.backgroundColor = "yellow";
         return false;
-    }
+    } 
     //validate postal code       
     else if (pcodeBilling.value.length === 0) { 
         window.alert('Please enter your postal code');
@@ -102,7 +101,6 @@ function validateForm() {
         return false;
     }
     //validate payment method radio button  
-   
     else if (!(paymentOption[0].checked || paymentOption[1].checked)) {
         alert("Please select your payment method");
         return false;
@@ -134,7 +132,6 @@ function validateForm() {
         return false;
     }
     //validate delivery method radio button
-
     else if (!(deliveryOption[0].checked || deliveryOption[1].checked)) {
         alert("Please select your delivery method");
         return false;

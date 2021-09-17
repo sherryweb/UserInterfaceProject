@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label>E-mail</label>
-                                        <input class="form-control" type="email" placeholder="abc@abc.com" id="emailBilling">
+                                        <input class="form-control" type="text" placeholder="abc@abc.com" id="emailBilling">
                                     </div>
                                     <div class="col-md-6">
                                         <label>Mobile No</label>
@@ -68,7 +68,20 @@
     
                                     <div class="col-md-6">
                                         <label>City</label>
-                                        <input class="form-control" type="text" placeholder="Montreal" id="cityBilling">
+                                        <select id="cityBilling" class="form-control">
+                                            <option value="" selected="selected">
+                                                SELECT A CITY</option>
+                                            <option>Anjou</option>
+                                            <option>Côte-des-Neiges–Notre-Dame-de-Grâce</option>
+                                            <option>Lachine-Lasalle-Dorval</option>
+                                            <option>Le Plateau-Mont-Royal</option>
+                                            <option>Montréal-Nord</option>
+                                            <option>Ville-Marie</option>
+                                            <option>Beaconsfield</option>
+                                            <option>Dollard-des-Ormeaux</option>
+                                            <option>Côte Saint-Luc</option>
+                                            <option>Pointe-Claire</option>
+                                        </select>&nbsp;&nbsp;
                                     </div>
     
                                     <div class="col-md-6">
@@ -117,8 +130,8 @@
                                     </div>
     
                                     <div class="col-md-6">
-                                        <label>ZIP Code</label>
-                                        <input class="form-control" type="text" placeholder="ZIP Code">
+                                        <label>Postal Code</label>
+                                        <input class="form-control" type="text" placeholder="Postal Code">
                                     </div>
                                 </div>
                             </div>
@@ -273,6 +286,8 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script/checkout.js"></script>
+    <script src="lib/picker.time.js"></script>
+    <script src="lib/picker.date.js"></script>
 </body>
 
 </html>
