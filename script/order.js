@@ -3,28 +3,29 @@
 // Script Date: September 12, 2021
 
 if (document.readyState == "loading") {
-  document.addEventListener("DOMContentLoaded", ready);
+  document.addEventListener("DOMContentLoaded", start);
 } else {
-  ready();
+  start();
 }
 
 /* clear all cart items */
-function ready() {
-  let removeCartItemBtn = document.getElementsByClassName("btn-remove");
+function start() {
+  var removeCartItemBtn = document.getElementsByClassName("btn-remove");
   for (let i = 0; i < removeCartItemBtn.length; i++) {
-    let btn = removeCartItemBtn[i];
+    var btn = removeCartItemBtn[i];
     btn.addEventListener("click", removeCartItem);
   }
 
-  let itemQuantity = document.getElementsByClassName("cart-item-quantity");
+  var itemQuantity = document.getElementsByClassName("cart-item-quantity");
   for (let i = 0; i < itemQuantity.length; i++) {
-    let input = itemQuantity[i];
+    var input = itemQuantity[i];
     input.addEventListener("change", quantityChanged);
   }
 
-  let addToCartBtn = document.getElementsByClassName("order-button");
-  for (let i = 0; i < addToCartBtn.length; i++) {
-    let btn = addToCartBtn[i];
+  var addToCartBtn = document.getElementsByClassName("order-button");
+  var addBtnlength=addToCartBtn.length;
+  for (let i = 0; i < addBtnlength; i++) {
+    var btn = addToCartBtn[i];
     btn.addEventListener("click", addToCartEvent);
   }
 
@@ -44,10 +45,10 @@ function quantityChanged(event) {
 
 function addToCartEvent(event) {
   var button = event.target;
-  var cartItem = button.parentElement.parentElement;
-  var title = cartItem.getElementsByClassName("menu-title")[0].innerText;
-  var price = cartItem.getElementsByClassName("menu-price")[0].innerText;
-  var imageSrc = cartItem.getElementsByClassName("menu-image")[0].src;
+  var cartAddItem = button.parentElement.parentElement;
+  var title = cartAddItem.getElementsByClassName("menu-title")[0].innerText;
+  var price = cartAddItem.getElementsByClassName("menu-price")[0].innerText;
+  var imageSrc = cartAddItem.getElementsByClassName("menu-image")[0].src;
   addItemToCart(title, price, imageSrc);
   updateCartTotal();
 }
@@ -55,26 +56,26 @@ function addToCartEvent(event) {
 function addItemToCart(title,price,imageSrc) {
   var cartRow = document.createElement("div");
   cartRow.classList.add("cart-row");
-  var cartItems = document.getElementsByClassName("cart-items")[0];
-  var cartItemName = cartItems.getElementsByClassName("cart-item-title");
+  var cartNewItems = document.getElementsByClassName("cart-items")[0];
+  var cartItemName = cartNewItems.getElementsByClassName("cart-title");
   for (let i = 0; i < cartItemName.length; i++) {
     if (cartItemName[i].innerText == title) {
-      alert("This item is already added to the cart");
+      alert("You have already add this item,please select others");
       return;
     }
   }
   var cartRowDetails = `
-        <div class="cart-item  cart-column">
+        <div class="cart-item cart-column">
             <img class="cart-image" src="${imageSrc}" width="100" height="100">
             <span class="cart-title">${title}</span>
         </div>
-        <span class="cart-price  cart-column">${price}</span>
+        <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity">
             <input class="cart-item-quantity" type="number" min="1" value="1" >
-            <button class="btn btn-remove" type="button">REMOVE</button>
+            <button class="btn-remove" type="button">REMOVE</button>
         </div>`;
   cartRow.innerHTML = cartRowDetails;
-  cartItems.append(cartRow);
+  cartNewItems.append(cartRow);
   cartRow
     .getElementsByClassName("btn-remove")[0]
     .addEventListener("click", removeCartItem);
@@ -107,9 +108,9 @@ function updateCartTotal() {
 }
 
 function placeOrderClicked() {
-  var cartItems = document.getElementsByClassName("cart-items")[0];
-  while (cartItems.hasChildNodes()) {
-    cartItems.removeChild(cartItems.firstChild);
+  var cartNewItems = document.getElementsByClassName("cart-items")[0];
+  while (cartNewItems.hasChildNodes()) {
+    cartNewItems.removeChild(cartNewItems.firstChild);
   }
   updateCartTotal();
   window.location.href='checkout.html';
