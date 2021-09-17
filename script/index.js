@@ -1,3 +1,7 @@
+// JavaScript source code for index page
+// Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang
+// Script Date: September 12, 2021
+
 runClock();
 setInterval("runClock()", 1000);
 
