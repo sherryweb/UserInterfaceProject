@@ -71,18 +71,20 @@ nav h2 a {
 }
 #timeHeading {
   color: rgb(0, 183, 255);
-  font-size: 24px;
-  margin-left: 995px;
-  margin-top: -160px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  margin-left: 900px;
+  margin-top: -90px;
 }
 div#dateNow {
   display: block;
-  margin-top: -15px;
+  margin-top: -25px;
   margin-left: 1000px;
   border: hidden;
   color: rgb(0, 183, 255);
   width: 200px;
-  font-size: 24px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.1em;
   font-weight: 600;
 }
