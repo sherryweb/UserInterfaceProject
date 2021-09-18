@@ -4,6 +4,22 @@
 /* Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang */
 /* Script Date: September 12, 2021 */
 
+#timeHeading {
+  color: rgb(0, 183, 255);
+  font-size: 16px;
+  margin-left: 850px;
+  margin-top: -80px;
+}
+div#dateNow {
+  display: block;
+  margin-top: -32px;
+  margin-left: 950px;
+  border: hidden;
+  color: rgb(0, 183, 255);
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .orderbody {
   display: block;
   box-shadow: #ddbdbd 0.5em 0.8em 1em;
