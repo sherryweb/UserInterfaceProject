@@ -143,11 +143,50 @@ placeOrderBtn.onclick = event => {
 
 /*********************************** Ajax for button click ***********************************/
 
+// const rankingBody = document.querySelector("#rankings- menu-title > menu-item")
 
+const rankingBody =  document.getElementsByClassName("menu-title")
+//console.log(rankingBody);
 
+function loadRankings(){
+  const request = new XMLHttpRequest();
 
+  request.open("get","data/rankings.json");
 
+  request.onload = () => {
+    try{
+   const json = JSON.prase(request.responseText);
+   populateRankings(json);
+  } catch (e) {
+     console.warn("Could not load ranking!");
+  }
+  };
+  request.send();
 
+}
+
+function populateRankings (json){
+   console.log(json);
+   //clear out existing table data
+  while (rankingBody.firstChild){
+    rankingBody.removeChild(rankingBody.firstChild);
+  }
+ 
+//populate table
+json.forEach((row) => {
+  const tr = document.createElement("tr");
+
+  row.forEach((cell) => {
+   const td = document.createElement("td");
+   td.textContent = cell;
+   tr.appendChild(td);
+  })
+
+  rankingBody.appendChild(tr);
+});
+}
+
+document.addEventListener("DOMContentLoaded,() => { loadRankings(); }");
 
 
 
