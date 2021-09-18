@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="author"
-      content="Filipe Moreira, Jia Zhu, Kevin Darby, Tingting Song, Xiaotong Zhang"
-    />
-    <title>Los Pollos Hermanos | Restaurant</title>
+    <meta name="author" content="Jia Zhu, Tingting Song, Xiaotong Zhang" />
+    <title>Event | Restaurant</title>
     <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/event.css" />
+    <script src="script/eventlist.js" defer="defer"></script> <!-- eventlist should go first! -->
     <script src="script/event.js" defer="defer"></script>
-    <script src="script/eventlist.js" defer="defer"></script>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap");
@@ -35,81 +33,54 @@
         <h2><a href="order.html">Order Online</a></h2>
         <h2><a href="contact-us.html">Contact Us</a></h2>
         <h2><a href="index-fr.html">FR</a></h2>
-        <h2><a href="cart.html">Cart</a></h2>
+        <h2><a href="cart.html"><i class="fa fa-shopping-bag"></i>&nbsp;Cart</a></h2>
       </nav>
       <h2 id="timeHeading">Welcome!</h2>
       <div id="dateNow">20/02/2020<br />6:45:12 p.m.</div>
     </header>
-
+    
     <section class="eventSection">
-      <div class="eventDiv">
-        <div class="event">
-          <img
-            class="eventimg"
-            src="images/barbecue_beef.jpg"
-            alt="Barbecue Beef"
-          />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
-            odit repudiandae labore animi ad ut. Fuga mollitia obcaecati
-            deleniti aspernatur vitae consectetur exercitationem, error
-            reiciendis natus, optio tempora corrupti iure!
-          </p>
-        </div>
-        <div class="event">
-          <img
-            class="eventimg"
-            src="images/barbecue_beef.jpg"
-            alt="Barbecue Beef"
-          />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
-            odit repudiandae labore animi ad ut. Fuga mollitia obcaecati
-            deleniti aspernatur vitae consectetur exercitationem, error
-            reiciendis natus, optio tempora corrupti iure!
-          </p>
-        </div>
-
-        <div class="event">
-          <img
-            class="eventimg"
-            src="images/barbecue_beef.jpg"
-            alt="Barbecue Beef"
-          />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
-            odit repudiandae labore animi ad ut. Fuga mollitia obcaecati
-            deleniti aspernatur vitae consectetur exercitationem, error
-            reiciendis natus, optio tempora corrupti iure!
-          </p>
-        </div>
+    <div class="eventDiv">
+      <div class="event">
+        <img class="eventimg" src="images/event1.jpg" alt="face painting" />
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita odit repudiandae labore animi ad ut. Fuga
+          mollitia obcaecati deleniti aspernatur vitae consectetur exercitationem, error reiciendis natus, optio tempora
+          corrupti iure!</p>
+      </div>
+      <div class="event">
+        <img class="eventimg" src="images/event2.jpg" alt="live music" />
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita odit repudiandae labore animi ad ut. Fuga
+          mollitia obcaecati deleniti aspernatur vitae consectetur exercitationem, error reiciendis natus, optio tempora
+          corrupti iure!</p>
       </div>
 
-      <div class="calenderDiv">
-        <h3 id="calenderTitle">Our Event</h3>
-        <div id="calendar">&nbsp;</div>
+      <div class="event">
+        <img class="eventimg" src="images/event3.jpg" alt="Classic Brunch" />
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita odit repudiandae labore animi ad ut. Fuga
+          mollitia obcaecati deleniti aspernatur vitae consectetur exercitationem, error reiciendis natus, optio tempora
+          corrupti iure!</p>
       </div>
-    </section>
 
-    <!-- same content with index  -->
-    <div class="app">
-      <div id="appdownloadleft">
-        <a href="https://www.apple.com/ca/app-store/"
-          ><img
-            id="appstore"
-            src="images/App-Store-resized.jpg"
-            alt="Download our app on App Store"
-        /></a>
-      </div>
-      <div id="appdownloadright">
-        <a href="https://play.google.com/"
-          ><img
-            id="googleplay"
-            src="images/Google-Play-resized.png"
-            alt="Download our app on Google Play"
-        /></a>
-      </div>
     </div>
+
+    <div class="calenderDiv">
+      <h3 id="calenderTitle">Our Monthly Event</h3>
+      <div id="calendarEvent">Calender goes here</div>
+    </div>
+
+      <!-- same content with index  -->
+  <div class="app">
+    <div id="appdownloadleft">
+      <a href="https://www.apple.com/ca/app-store/"><img id="appstore" src="images/App-Store-resized.jpg"
+          alt="Download our app on App Store" /></a>
+    </div>
+    <div id="appdownloadright">
+      <a href="https://play.google.com/"><img id="googleplay" src="images/Google-Play-resized.png"
+          alt="Download our app on Google Play" /></a>
+    </div>
+  </div>
+
+  </section>
 
     <footer>
       <h2>About Us</h2>

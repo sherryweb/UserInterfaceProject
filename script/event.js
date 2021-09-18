@@ -4,133 +4,141 @@
 
 "use strict";
 
-/* Set the date displayed in the calendar - create an instance of the date object */
-var thisDay = new Date();
+/* set the date displayed in the calendar */
+let thisDay = new Date();
 
-/* Write the calendar to the element with the id 'calendar' */
-document.getElementById("calendar").innerHTML = createCalendar(thisDay);
+/* write the calendar to the element with the id 'calendar' */
+document.getElementById('calendarEvent').innerHTML = createCalendar(thisDay);
+
 
 /**
  * Creates the calendar table for the month specified in the
- * calDate parameter. The current date is highlighted in 
- * the table.
- * @param {Date} calDate 
+calDate parameter. The current date is highlighted in 
+the table.
+ * @param {date} calDate 
  */
 function createCalendar(calDate) {
-    // alert(calDate);
-    let calendarHTML = "<table id='calendar_table'>";
-    calendarHTML += calCaption(calDate);
-    calendarHTML += calWeekdayRow();
-    calendarHTML += calDays(calDate);
-    calendarHTML += '</table>';
-    return calendarHTML;
+   let calendarHTML = "<table id='calendar_table'>";
+   calendarHTML += calendarCaption(calDate);
+   calendarHTML += calendarWeekDayRow();
+   calendarHTML += calendarDays(calDate);
+   calendarHTML += '</table>';
+
+   return calendarHTML;
 } // end function createCalendar
 
 
 /**
  * Writes the caption of the calendar table
- * @param {String} calDate 
+ * @param {date} calDate 
  */
-function calCaption(calDate) {
-    // montName array contains the list of month names
-    let monthName = ["January", "February", "March", "April",
-        "May", "June", "July", "August", "September",
-        "October", "November", "December"
-    ];
+function calendarCaption(calDate) {
+   // monthName array contains the list of month names
+   let monthName = [
+      'January', 'February', 'March',
+      'April', 'May', 'June',
+      'July', 'August', 'September',
+      'October', 'November', 'December'
+   ];
 
-    // Determine the current month
-    let thisMonth = calDate.getMonth();
-    //alert(thisMonth);
-    // Determine the current year
-    let thisYear = calDate.getFullYear();
-    //alert(thisYear);
-    // Write the caption
-    let theCaption = '<caption>' + monthName[thisMonth] + " " + thisYear + '</caption>';
-    return theCaption;
-} // end function calCaption
+   // determine the current month
+   let thisMonth = calDate.getMonth();
+
+   // determine the current year
+   let thisYear = calDate.getFullYear();
+
+   // write the caption
+   let calCaption = monthName[thisMonth] + ' ' + thisYear;
+   return '<caption>' + calCaption + '</caption>';
+} // end calendarCaption
 
 
 /**
  * Writes the weekday title rows in the calendar table
  */
-function calWeekdayRow() {
-    // Array of weekday abbreviations 
-    let dayName = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-    let rowHTML = '<tr>';
+function calendarWeekDayRow() {
+   // array of weekday abbriviations
+   let dayName = [
+      'SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'
+   ];
 
-    // Loop through the dayName array
-    for (let counter = 0; counter < dayName.length; counter++) {
-        rowHTML += "<th class='calendar_weekdays'>" + dayName[counter] + "</th>";
-    } // end for loop
+   let rowHTML = '<tr>';
 
-    rowHTML += '</tr>';
-    return rowHTML;
-
-} // end function calWeekdayRow
-
+   // loop through the dayName array
+   for (let dayIndex = 0; dayIndex < dayName.length; dayIndex++) {
+      rowHTML += "<th class='calendar_weekdays'>" +
+         dayName[dayIndex] + '</th>';
+   } // end for loop
+   rowHTML += '</tr>';
+   return rowHTML;
+} // end function calendarWeekDayRow
 
 /**
  * Returns the number of days in the month from calDate
- * @param {Number} calDate 
+ * @param {date} calDate 
  */
 function daysInMonth(calDate) {
-    // Array of days in each month
-    let dayCount = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+   // array of days in each month
+   let dayCount = [
+      31, 28, 31,
+      30, 31, 30,
+      31, 31, 30,
+      31, 30, 31
+   ];
 
-    // Extract the four digit year and month value
-    let thisYear = calDate.getFullYear();
-    let thisMonth = calDate.getMonth();
+   // extract the four digit year and month value
+   let thisYear = calDate.getFullYear();
+   let thisMonth = calDate.getMonth();
 
-    // Revise the days in February for leap years
-    /*
-    The year must be evenly divisible by 4;
-    If the year can also be evenly divided by 100, it is not a leap year;
-    unless...
-    The year is also evenly divisible by 400. Then it is a leap year.
-    */
-    if (thisYear % 4 === 0) {
-        if ((thisYear % 100 != 0) || (thisYear % 400 === 0)) {
-            dayCount[1] = 29;
-        }
-    }
+   // check if the year is a leap year
+   if (thisYear % 4 === 0) {
+      if ((thisYear % 100 != 0) || (thisYear % 400 === 0)) {
+         dayCount[1] = 29;
+      } // inner if
+   } // outer if
 
-    // Return the number of days for the current month
-    return dayCount[thisMonth];
+   // return the number of days for the current month
+   return dayCount[thisMonth];
 } // end function daysInMonth
-
 
 /**
  * Writes the daily rows in the calendar table, highlighting calDate
- * @param {Number} calDate 
+ * @param {date} calDate 
  */
-function calDays(calDate) {
-    // Writes the daily rows in the calendar table, highlighting calDate
-    let day = new Date(calDate.getFullYear(), calDate.getMonth(), 1);
-    let weekDay = day.getDay();
+function calendarDays(calDate) {
+   // determine the starting day of the month 
+   let today = new Date(calDate.getFullYear(), calDate.getMonth(), 1);
+   let weekDay = today.getDay();
 
-    // Write blank cells preceding the starting day
-    let htmlCode = "<tr>";
-    for (var i = 0; i < weekDay; i++) {
-        htmlCode += "<td></td>";
-    }
+   // write blank cells preceeding the starting day
+   let htmlCode = '<tr>';
+   for (let countBlank = 0; countBlank < weekDay; countBlank++) {
+      htmlCode += '<td>&nbsp;</td>';
+   } // end for
 
-    // Write cells for each day of the month
-    let totalDays = daysInMonth(calDate);
+   // write cells for each day of the month
+   let totalDays = daysInMonth(calDate);
 
-    let highlightDay = calDate.getDate();
+   let highlightDay = calDate.getDate();
 
-    for (var i = 1; i <= totalDays; i++) {
-        day.setDate(i);
-        weekDay = day.getDay();
+   for (let days = 1; days <= totalDays; days++) {
+      today.setDate(days);
+      weekDay = today.getDay();
 
-        if (weekDay === 0) htmlCode += "<tr>";
-        if (i === highlightDay) {
-            htmlCode += "<td class='calendar_dates' id='calendar_today'>" + i + dayEvent[i] + "</td>";
-        } else {
-            htmlCode += "<td class='calendar_dates'>" + i + dayEvent[i] + "</td>";
-        }
-        if (weekDay === 6) htmlCode += "</tr>";
-    }
-    return htmlCode;
-
-} // end function calDays
+      if (weekDay === 0) {
+         htmlCode += '<tr>';
+      }
+      if (days === highlightDay) {
+         htmlCode += "<td class='calendar_dates' id='calendar_today'>" + days +
+            dayEvent[days] + '</td>';
+      } // end if
+      else {
+         htmlCode += "<td class='calendar_dates'>" + days +
+            dayEvent[days] + '</td>';
+      }
+      if (weekDay === 6) {
+         htmlCode += '</tr>';
+      } // end if      
+   } // for loop
+   return htmlCode;
+} // end function calendarDays

@@ -14,15 +14,17 @@ body {
     margin: auto;
     max-width: 1200px;
     min-width: 800px;
-    max-height: 1685px;
+    max-height: 160em;
     box-shadow: #ddbdbd 0.5em 0.8em 1em;
 }
+
 #timeHeading {
   color: rgb(0, 183, 255);
   font-size: 16px;
   margin-left: 900px;
   margin-top: -80px;
 }
+
 div#dateNow {
   display: block;
   margin-top: -28px;
@@ -86,19 +88,15 @@ nav h2 a {
     color: #540B0E;
 }
 
-
 /**********************************/
 /********** Checkout CSS **********/
 /**********************************/
 .checkout {
     position: relative;
     padding-top: 30px;
-    position: relative;
     width: 100%;
     background: #ffffff;
-    margin-bottom: 25px;
     background-image: url(/images/background.jpg);
-
 }
 
 .checkout .checkout-inner {
@@ -250,33 +248,41 @@ nav h2 a {
 
 /*********  footer CSS *********/
 
-#appdownloadleft {
+.app {
+    padding: 1em;
+    background-image: url(/images/background.jpg);
+}
+  
+  #appdownloadleft {
     float: left;
     width: 50%;
     height: auto;
-}
-
-#appdownloadleft {
+  }
+  
+  #appdownloadleft {
     float: right;
     width: 50%;
     height: auto;
-}
-#appstore {
-  position: relative;
-
-  padding-left: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#googleplay {
-  position: relative;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  }
+  
+  #appstore {
+    position: relative;
+    margin-top: 10px;
+    bottom: 0;
+    padding-left: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #googleplay {
+    position: relative;
+    bottom: 0;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 footer {
     background-color: #9E2A2B;

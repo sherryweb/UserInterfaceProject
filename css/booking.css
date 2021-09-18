@@ -10,12 +10,11 @@
 /********* Index CSS *********/
 /*******************************/
 
-body {
-    margin: auto;
-    max-width: 1200px;
-    min-width: 800px;
-    max-height: 1685px;
+.bookingBody {
+    display: block;
     box-shadow: #ddbdbd 0.5em 0.8em 1em;
+    font-family: "Lemon", cursive;
+    max-height: 160em;
 }
 
 header {
@@ -96,7 +95,6 @@ div#dateNow {
     position: relative;
     width: 100%;
     background: #ffffff;
-    margin-bottom: 25px;
     background-image: url(/images/background.jpg);
 }
 
@@ -179,35 +177,41 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 
 /*********  footer CSS *********/
-
-#appdownloadleft {
+.app {
+    padding: 1.3em;
+    background-image: url(/images/background.jpg);  
+  }
+  
+  #appdownloadleft {
     float: left;
     width: 50%;
     height: auto;
-}
-
-#appdownloadleft {
+  }
+  
+  #appdownloadleft {
     float: right;
     width: 50%;
     height: auto;
-}
-
-#appstore {
+  }
+  
+  #appstore {
     position: relative;
-    bottom: 15px;
+    margin-top: 10px;
+    bottom: 0;
     padding-left: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-#googleplay {
+  }
+  
+  #googleplay {
     position: relative;
-    bottom: 15px;
+    bottom: 0;
     display: block;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
 footer {
     background-color: #9E2A2B;

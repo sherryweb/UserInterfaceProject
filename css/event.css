@@ -9,7 +9,8 @@
     display: block;
     box-shadow: #ddbdbd 0.5em 0.8em 1em;
     font-family: "Lemon", cursive;
-    max-height: 160em;
+    /* max-height: 160em; */
+    min-height: 100%;   
   }
 
 .eventSection{
@@ -23,21 +24,73 @@
 } 
 
 .event p{
-    padding: 0 0.5em 0 0.5em;
-    color: white;
+    padding: 1em;
+    color:#cac58b;
+    line-height: 150%;
 }
 
 .eventimg{
     float: left;
     width: 20em;
     padding: 1em;
+    border-radius: 3em;
 }
 
+/*************************** calender part ***************************/
 .calenderDiv{
-    height: 35em;
-    text-align: center;
-    padding: 1em;
-    background-color: blanchedalmond;
+  height: 37em;
+  text-align: center;
+  padding: 1em;
+  color: #9e2a2b;
+  background-image: linear-gradient(#f7f0b4, #e45656);
+}
+
+#calenderTitle{
+  font-size: x-large;
+}
+
+#calendar_table {
+  background-color: rgb(233, 227, 227);  
+  font-size: 0.9em; 
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+  width: 100%;
+  box-shadow: rgb(126, 115, 115) 0px 0px 1px,
+              rgb(51, 51, 51) 0px 0px 5px, 
+              rgb(128, 109, 109) 0px 0px 10px,
+              rgb(173, 109, 109) 0px 0px 20px;               
+}
+
+#calendar_table caption {
+  caption-side: top; 
+  text-align: center;
+  padding-bottom: 1em; 
+  font-size: 1.6em; 
+  letter-spacing: 0.3em;
+}
+
+.calendar_weekdays {
+  background-color: ivory;
+  width: 14.28%; 
+  font-size: 1.2em; 
+  border-bottom: 2px solid rgb(209, 142, 142);
+}
+
+.calendar_dates {
+  text-align: left; 
+  vertical-align: top;
+  font-size: 0.5em;
+  padding: 3px;
+  border: 1px dotted gray;
+  background-color: white;
+  /* height: 60px; */
+  height: 2em;
+}
+
+#calendar_today {
+  font-weight: bold; 
+  color: rgb(51, 51, 51);
+  background-color: rgb(251, 203, 176);
+  border: 1px solid black;
 }
 
 /*************************** footer part ***************************/

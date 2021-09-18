@@ -12,9 +12,10 @@ body {
   margin: auto;
   max-width: 1200px;
   min-width: 800px;
-  height: 1000px;
+  max-height: 160em;
   box-shadow: #ddbdbd 0.5em 0.8em 1em;
 }
+
 main {
   background-image: url("../images/background.jpg");
   background-repeat: repeat;

@@ -115,16 +115,15 @@ function updateCartTotal() {
 const placeOrderBtn=document.getElementsByClassName("btn-placeOrder"); 
 
 placeOrderBtn.onclick = event => {
-
   window.location.href='checkout.html';
-
+};
 
   // event.preventDefault();
   // data = getFormData();
   // localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
   // const message = "Form draft has been saved!";
   // displayAlert(message);
-};
+
 
 
 
