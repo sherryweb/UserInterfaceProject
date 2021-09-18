@@ -67,28 +67,22 @@ body {
     color: #540b0e;
   }
 
-#mainHeading {
-  text-align: center;
-  color: white;
-  font-family: "Lemon", cursive;
-}
-#timeHeading {
-  color: rgb(0, 183, 255);
-  font-size: 24px;
-  margin-left: 995px;
-  margin-top: -160px;
-}
-div#dateNow {
-  display: block;
-  margin-top: -15px;
-  margin-left: 1000px;
-  border: hidden;
-  color: rgb(0, 183, 255);
-  width: 200px;
-  font-size: 24px;
-  line-height: 1.1em;
-  font-weight: 600;
-}
+  #timeHeading {
+    color: rgb(0, 183, 255);
+    font-size: 16px;
+    margin-left: 900px;
+    margin-top: -80px;
+  }
+  div#dateNow {
+    display: block;
+    margin-top: -32px;
+    margin-left: 1000px;
+    border: hidden;
+    color: rgb(0, 183, 255);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
 main {
   background-image: url("../images/background.jpg");
   background-repeat: repeat;
