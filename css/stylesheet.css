@@ -267,3 +267,7 @@ footer h3 {
   font-size: 10px;
   color: white;
 }
+
+.btn .cart {
+  margin-left: 1000px;
+}
