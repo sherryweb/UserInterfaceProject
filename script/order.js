@@ -142,51 +142,65 @@ placeOrderBtn.onclick = event => {
 // }
 
 /*********************************** Ajax for button click ***********************************/
-
-// const rankingBody = document.querySelector("#rankings- menu-title > menu-item")
-
-const rankingBody =  document.getElementsByClassName("menu-title")
-//console.log(rankingBody);
-
-function loadRankings(){
-  const request = new XMLHttpRequest();
-
-  request.open("get","data/rankings.json");
-
-  request.onload = () => {
-    try{
-   const json = JSON.prase(request.responseText);
-   populateRankings(json);
-  } catch (e) {
-     console.warn("Could not load ranking!");
-  }
+function loadContent(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var list=JSON.parse(this.responseText);
+      document.getElementById("resultContent").innerHTML = list.list;
+    }
   };
-  request.send();
-
+  xhttp.open("GET", "/json/orderlist.json", true);
+  xhttp.send();
 }
 
-function populateRankings (json){
-   console.log(json);
-   //clear out existing table data
-  while (rankingBody.firstChild){
-    rankingBody.removeChild(rankingBody.firstChild);
-  }
+// // const rankingBody = document.querySelector("#rankings- menu-title > menu-item")
+
+// const rankingBody =  document.getElementsByClassName("menu-title")
+// //console.log(rankingBody);
+
+// function loadRankings(){
+//   const request = new XMLHttpRequest();
+
+//   request.open("get","data/rankings.json");
+
+//   request.onload = () => {
+//     try{
+//    const json = JSON.prase(request.responseText);
+//    populateRankings(json);
+//   } catch (e) {
+//      console.warn("Could not load ranking!");
+//   }
+//   };
+//   request.send();
+
+// }
+
+// function populateRankings (json){
+//    console.log(json);
+//    //clear out existing table data
+//   while (rankingBody.firstChild){
+//     rankingBody.removeChild(rankingBody.firstChild);
+//   }
  
-//populate table
-json.forEach((row) => {
-  const tr = document.createElement("tr");
+// //populate table
+// json.forEach((row) => {
+//   const tr = document.createElement("tr");
 
-  row.forEach((cell) => {
-   const td = document.createElement("td");
-   td.textContent = cell;
-   tr.appendChild(td);
-  })
+//   row.forEach((cell) => {
+//    const td = document.createElement("td");
+//    td.textContent = cell;
+//    tr.appendChild(td);
+//   })
 
-  rankingBody.appendChild(tr);
-});
-}
+//   rankingBody.appendChild(tr);
+// });
+// }
 
-document.addEventListener("DOMContentLoaded,() => { loadRankings(); }");
+// document.addEventListener("DOMContentLoaded,() => { loadRankings(); }");
+
+
+
 
 
 
