@@ -4,22 +4,6 @@
 /* Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang */
 /* Script Date: September 12, 2021 */
 
-#timeHeading {
-  color: rgb(0, 183, 255);
-  font-size: 16px;
-  margin-left: 850px;
-  margin-top: -80px;
-}
-div#dateNow {
-  display: block;
-  margin-top: -32px;
-  margin-left: 950px;
-  border: hidden;
-  color: rgb(0, 183, 255);
-  font-size: 16px;
-  font-weight: 600;
-}
-
 .orderbody {
   display: block;
   box-shadow: #ddbdbd 0.5em 0.8em 1em;
@@ -93,11 +77,6 @@ div#dateNow {
   font-family: "Lemon", cursive;
 }
 
-#resultContent{
-    color:  rgb(180, 41, 41);
-    padding-left: 1em;
-}
-
 .burgerdiv,
 .sidediv,
 .drinkdiv {
@@ -151,7 +130,6 @@ div#dateNow {
 /***************************cart part******************************/
 .cart-section{
   background-color: #f1cc95;
-  padding-bottom: 0.1em;
 }
 
 .cart-header {
@@ -248,13 +226,14 @@ div#dateNow {
 
 .btn-placeOrder{
   display: block;
-  margin: 1em auto 1em auto;
+  margin: 0.5em auto 0.5em auto;
   font-size: 1em;
   color: white;
   background-color: #3189d1;
+  border: none;
   border-radius: 0.5em;
   font-weight: bold;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.5em;
 }
 
 .btn-placeOrder:hover {

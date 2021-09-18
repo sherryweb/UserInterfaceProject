@@ -4,272 +4,266 @@
 /* Script Date: September 12, 2021 */
 
 body {
-  margin: auto;
-  max-width: 1200px;
-  min-width: 800px;
-  box-shadow: #ddbdbd 0.5em 0.8em 1em;
+    margin: auto;
+    max-width: 1200px;
+    min-width: 800px;
 }
 
 header {
-  background-color: #540b0e;
-  height: 200px;
+    background-color: #540B0E;
+    height: 200px;
 }
 
 header img {
-  width: 150px;
-  position: relative;
-  right: 430px;
+    width: 150px;
+    position: relative;
+    right: 430px;
 }
-#headerimgfr {
-  width: 150px;
-  position: relative;
-  right: 290px;
+#headerimgfr{
+    width: 150px;
+    position: relative;
+    right: 290px;
+
 }
 
 header h1 {
-  float: left;
-  position: relative;
-  left: 5em;
-  top: 30px;
-  font-family: "Special Elite", cursive;
-  color: white;
-  font-size: 2.6em;
+    float: left;
+    position: relative;
+    left: 5em;
+    top: 30px;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-size: 2.6em;
 }
 
 header nav {
-  background-color: #e09f3e;
-  height: 50px;
-  text-align: center;
+    background-color: #E09F3E;
+    height: 50px;
+    text-align: center;
 }
 
 nav h2 {
-  display: inline;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  padding: 25px;
-  position: relative;
-  top: 8px;
-  font-family: "Lemon", cursive;
-  font-size: large;
+    display: inline;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    top: 8px; 
+    font-family: 'Lemon', cursive;
+    font-size: large;
 }
 
 nav h2:hover {
-  background-color: #540b0e;
+    background-color: #540B0E;
 }
 
 nav h2 a:hover {
-  color: #e09f3e;
+    color: #E09F3E;
 }
 
 nav h2 a {
-  text-decoration: none;
-  color: #540b0e;
+    text-decoration: none;
+    color: #540B0E;
 }
-#timeHeading {
-  color: rgb(0, 183, 255);
-  font-size: 16px;
-  margin-left: 900px;
-  margin-top: -80px;
-}
-div#dateNow {
-  display: block;
-  margin-top: -32px;
-  margin-left: 1000px;
-  border: hidden;
-  color: rgb(0, 183, 255);
-  font-size: 16px;
-  font-weight: 600;
-}
-main {
-  background-image: url("../images/background.jpg");
-  background-repeat: repeat;
-  background-size: cover;
-  padding-bottom: 25px;
-  padding-top: 20px;
-  margin-bottom: 0;
+main{
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    padding-bottom:25px;
+    padding-top:20px;
+    margin-bottom: 0;
 }
 
-main h2 {
-  font-family: "Special Elite", cursive;
-  font-size: 36px;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 35px;
-  margin-bottom: 5px;
+
+main h2{
+    font-family: 'Special Elite', cursive;
+    font-size:36px;
+    color:white;
+    text-align: center;
+    padding:10px;
+    margin-top: 35px;
+    margin-bottom:5px;
 }
-p {
-  font-family: "Special Elite", cursive;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 0;
+p{
+    font-family: 'Special Elite', cursive;
+    font-size:30px;
+    color:white;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .contact-icon {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fbaf32;
-  border-radius: 50px;
-  margin-left: 10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fbaf32;
+    border-radius: 50px;
+    margin-left:10px;
 }
 
-.contact-icon i {
-  font-size: 18px;
-  color: #ffffff;
+ .contact-icon i {
+    font-size: 18px;
+    color: #ffffff;
+   
 }
 
 .contact-info span {
-  font-size: 24px;
-  color: white;
-  position: relative;
-  font-weight: 600;
+    font-size: 24px;
+    color: white;
+    position: relative;
+    font-weight:600;
+
 }
 .contact-info p {
-  font-size: 18px;
-  color: #fbaf32;
-  position: absolute;
-  font-weight: 600;
-  margin-left: 100px;
-  margin-top: -30px;
+    font-size: 18px;
+    color: #fbaf32;
+    position: absolute;
+    font-weight:600;
+    margin-left:100px;
+    margin-top:-30px;
 }
 
-.contact-social {
-  position: absolute;
-  margin-left: 270px;
-  margin-top: -30px;
-  font-size: 18px;
-  margin-right: 10px;
-  color: #fbaf32;
-  margin-bottom: 16px;
+.contact-social  {
+    position:absolute;
+    margin-left:270px;
+    margin-top:-30px;
+    font-size: 18px;
+    margin-right:10px;
+    color: #fbaf32;
+    margin-bottom: 16px; 
 }
 
-iframe {
-  border-radius: 15px;
-  margin-top: 24px;
-  margin-left: 10px;
+
+ iframe{
+    border-radius: 15px;
+    margin-top:24px;
+    margin-left: 10px;
 }
 
-main h3 {
-  position: relative;
-  font-family: "Special Elite", cursive;
-  color: #fbaf32;
-  font-weight: 600;
-  margin-left: 120px;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-#contact-us-form {
-  margin-left: 5px;
+main h3{
+    position: relative;
+    font-family: 'Special Elite', cursive;
+    color:#fbaf32;
+    font-weight: 600;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size:24px;
 }
 form {
-  border-radius: 5px;
-  border-color: lightgrey;
-  color: blue;
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 16px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    color:blue;
+    margin-bottom: 10px;
+    padding:10px;
+    font-size:16px;
+  
 }
-input[type="text"],
-input[type="email"] {
-  font-size: 16px;
-  width: 600px;
+input[type=text],input[type=email]{
+    font-size:16px;
+    
 }
-textarea {
-  font-size: 12px;
-  width: 600px;
-}
-
-input[type="submit"] {
-  font-size: 16px;
-  font-weight: 600;
-  background-color: #fbaf32;
-  color: white;
-  width: 180px;
-  height: 45px;
-  border-radius: 5px;
-}
-video {
-  margin-top: 10px;
-  margin-bottom: 0;
+textarea{
+    font-size:16px;
 }
 
-#hiring {
-  position: absolute;
-  margin-top: -200px;
-  margin-left: 650px;
-  font-size: 14px;
-  border-style: hidden;
+input[type=submit] {
+    font-size:16px;
+    font-weight: 600;;
+    background-color: #fbaf32;
+    color: white;
+    width:180px;
+    height:45px;
+    border-radius: 5px;
 }
-#hiring h2 {
-  color: white;
-  margin-top: 10px;
-  margin-bottom: -5px;
+video{
+    margin-top:10px;
+    margin-bottom: 0;
+    
 }
-#hiring h3 {
-  font-family: "Special Elite", cursive;
-  margin-top: 5px;
-  font-size: 20px;
+
+#hiring{
+    position:absolute;
+    margin-top: -200px;
+    margin-left: 650px;
+    font-size:14px;
+    border-style:hidden;
+    
 }
-#hiring h3 a:link {
-  color: white;
+#hiring h2{
+    color:white;
+    margin-top:10px;
+    margin-bottom: -5px;
+}
+#hiring h3  {
+    font-family: 'Special Elite', cursive;
+    margin-top:5px;
+    font-size:20px;
+      
+}
+#hiring h3 a:link{
+    color:white; 
+
 }
 #appdownloadleft {
-  float: left;
-  width: 50%;
-  height: auto;
+    float: left;
+    width: 50%;
+    height: auto;
+   
 }
 
 #appdownloadleft {
-  float: right;
-  width: 50%;
-  height: auto;
+    float: right;
+    width: 50%;
+    height: auto;
+   
 }
 
 #appstore {
-  position: relative;
-  bottom: 0;
-  padding-left: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    position: relative;
+    bottom:0;
+    padding-left: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #googleplay {
-  position: relative;
-  bottom: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    position: relative;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 footer {
-  background-color: #9e2a2b;
-  text-align: center;
-  position: relative;
-  padding: 10px;
+    background-color: #9E2A2B;
+    text-align: center;
+    position: relative;
+    padding:10px;
 }
 
 footer h2 {
-  display: inline;
-  margin-right: auto;
-  padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 12px;
-  color: white;
+    display: inline;
+    margin-right: auto;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: white;
 }
 
 footer h3 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 10px;
-  color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    color: white;
 }
+
+
+
+

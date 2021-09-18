@@ -12,14 +12,8 @@ body {
   margin: auto;
   max-width: 1200px;
   min-width: 800px;
-  height: 1000px;
+  max-height: 1685px;
   box-shadow: #ddbdbd 0.5em 0.8em 1em;
-}
-main {
-  background-image: url("../images/background.jpg");
-  background-repeat: repeat;
-  padding-bottom: 25px;
-  padding-top: 20px;
 }
 
 header {
@@ -87,27 +81,25 @@ div h3 {
 }
 #timeHeading {
   color: rgb(0, 183, 255);
-  font-size: 16px;
-  margin-left: 900px;
-  margin-top: -80px;
+  font-size: 24px;
+  margin-left: 995px;
+  margin-top: -160px;
 }
 div#dateNow {
   display: block;
-  margin-top: -32px;
+  margin-top: -15px;
   margin-left: 1000px;
   border: hidden;
   color: rgb(0, 183, 255);
-
-  font-size: 16px;
-
+  width: 200px;
+  font-size: 24px;
+  line-height: 1.1em;
   font-weight: 600;
 }
 
 #mainburguerimg {
   position: relative;
   width: 100%;
-  height: 650px;
-  margin-top: -20px;
 }
 
 #mainburguertext {
@@ -130,16 +122,17 @@ div#dateNow {
 #leftmenu {
   float: left;
   width: 50%;
-  height: 1300px;
+  height: auto;
 }
 
 #rightmenu {
   float: right;
   width: 50%;
-  height: 1300px;
+  height: auto;
 }
 
 #burguer1img {
+  background-color: #fff3b0;
   position: relative;
   width: 90%;
   height: auto;
@@ -159,6 +152,7 @@ div#dateNow {
 }
 
 #burguer2img {
+  background-color: #fff3b0;
   position: relative;
   bottom: 115px;
   width: 90%;
@@ -177,53 +171,16 @@ div#dateNow {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 #burguer3img {
+  background-color: #fff3b0;
   position: relative;
-  bottom: 230px;
   width: 90%;
   height: auto;
   padding: 30px;
 }
 
 #burguer3txt {
-  position: relative;
-  bottom: 330px;
-  width: 270px;
-  text-align: center;
-  color: white;
-  background-color: rgba(84, 11, 14, 0.7);
-  padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-#burguer4img {
-  position: relative;
-  bottom: 350px;
-  width: 90%;
-  height: auto;
-  padding: 30px;
-}
-
-#burguer4txt {
-  position: relative;
-  bottom: 450px;
-  width: 270px;
-  text-align: center;
-  color: white;
-  background-color: rgba(84, 11, 14, 0.7);
-  padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-#burguer5img {
-  position: relative;
-  width: 90%;
-  height: auto;
-  padding: 30px;
-}
-
-#burguer5txt {
   position: relative;
   bottom: 103px;
   width: 270px;
@@ -235,7 +192,8 @@ div#dateNow {
     "Lucida Sans", Arial, sans-serif;
 }
 
-#burguer6img {
+#burguer4img {
+  background-color: #fff3b0;
   position: relative;
   bottom: 115px;
   width: 90%;
@@ -243,47 +201,9 @@ div#dateNow {
   padding: 30px;
 }
 
-#burguer6txt {
+#burguer4txt {
   position: relative;
   bottom: 218px;
-  width: 270px;
-  text-align: center;
-  color: white;
-  background-color: rgba(84, 11, 14, 0.7);
-  padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-#burguer7img {
-  position: relative;
-  bottom: 230px;
-  width: 90%;
-  height: auto;
-  padding: 30px;
-}
-
-#burguer7txt {
-  position: relative;
-  bottom: 330px;
-  width: 270px;
-  text-align: center;
-  color: white;
-  background-color: rgba(84, 11, 14, 0.7);
-  padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-#burguer8img {
-  position: relative;
-  bottom: 350px;
-  width: 90%;
-  height: 300px;
-  padding: 30px;
-}
-
-#burguer8txt {
-  position: relative;
-  bottom: 450px;
   width: 270px;
   text-align: center;
   color: white;
@@ -307,7 +227,7 @@ div#dateNow {
 
 #appstore {
   position: relative;
-
+  bottom: 320px;
   padding-left: 25px;
   display: block;
   margin-left: auto;
@@ -316,7 +236,7 @@ div#dateNow {
 
 #googleplay {
   position: relative;
-
+  bottom: 320px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -326,20 +246,24 @@ footer {
   background-color: #9e2a2b;
   text-align: center;
   position: relative;
-  padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  bottom: 310px;
 }
 
 footer h2 {
   display: inline;
   margin-right: auto;
   padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
+
   color: white;
 }
 
 footer h3 {
+  padding-bottom: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 10px;
   color: white;
 }
