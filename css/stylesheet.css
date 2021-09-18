@@ -97,9 +97,7 @@ div#dateNow {
   margin-left: 1000px;
   border: hidden;
   color: rgb(0, 183, 255);
-
   font-size: 16px;
-
   font-weight: 600;
 }
 
@@ -151,11 +149,14 @@ div#dateNow {
   bottom: 103px;
   width: 270px;
   text-align: center;
-  color: white;
   background-color: rgba(84, 11, 14, 0.7);
   padding: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+#burguer1txt a {
+  color: white;
+  text-decoration: none;
 }
 
 #burguer2img {
@@ -177,6 +178,10 @@ div#dateNow {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+#burguer2txt a {
+  color: white;
+  text-decoration: none;
+}
 #burguer3img {
   position: relative;
   bottom: 230px;
@@ -196,6 +201,7 @@ div#dateNow {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 #burguer4img {
   position: relative;
   bottom: 350px;
@@ -234,6 +240,10 @@ div#dateNow {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+#burguer5txt a {
+  color: white;
+  text-decoration: none;
+}
 
 #burguer6img {
   position: relative;
@@ -253,6 +263,10 @@ div#dateNow {
   padding: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+#burguer6txt a {
+  color: white;
+  text-decoration: none;
 }
 #burguer7img {
   position: relative;
