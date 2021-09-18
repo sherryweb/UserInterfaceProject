@@ -11,7 +11,7 @@ function runClock() {
   var timeStr = currentDay.toLocaleTimeString();
 
   /* Display the current date and time */
-  document.getElementById("dateNow").innerHTML = dateStr + "<br />" + timeStr;
+  document.getElementById("dateNow").innerHTML = dateStr + "&nbsp" + timeStr;
   /* Calculate the days until oct 1st */
   var promotionDay = new Date("October 1, 2021 00:00:00");
 
