@@ -24,9 +24,26 @@ function runClock() {
   var minsLeft = (hrsLeft - Math.floor(hrsLeft)) * 60;
   var secsLeft = (minsLeft - Math.floor(minsLeft)) * 60;
 
-  /* Display the time left until New Year's Eve */
+  /* Display the time left until promotion day ends */
   document.getElementById("days").textContent = Math.floor(daysLeft);
   document.getElementById("hrs").textContent = Math.floor(hrsLeft);
   document.getElementById("mins").textContent = Math.floor(minsLeft);
   document.getElementById("secs").textContent = Math.floor(secsLeft);
 }
+function changeText() {
+  let x = document.getElementById("promotion_info");
+  // check the status of the currentSign
+  if (x.innerHTML === "🍔20% off Entire Purchase Promo code: offT80🍟") {
+    // switch text
+    x.innerHTML = "🍔50%  off on Vegan Burger🍟";
+  } else if (x.innerHTML === "🍔50%  off on Vegan Burger🍟") {
+    // switch text
+    x.innerHTML = "🍔50%  off now🍟";
+    // change the current sign value to on
+  } else {
+    x.innerHTML = "🍔20% off Entire Purchase Promo code: offT80🍟";
+  }
+}
+changeText();
+setInterval("changeText()", 1000);
+
