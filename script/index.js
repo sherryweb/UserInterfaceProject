@@ -23,10 +23,11 @@ function changeSign() {
     currentSign = "index-burger2";
   } else if (currentSign === "index-burger2") {
     // switch images
-    document.getElementById("mainburguerimg").src = "images/chicken_wings.jpg";
+    document.getElementById("mainburguerimg").src =
+      "images/burguers_on_black.jpg";
     // change the current sign value to on
-    currentSign = "chicken_wings";
-  } else if (currentSign === "chicken_wings") {
+    currentSign = "burguers_on_black";
+  } else if (currentSign === "burguers_on_black") {
     document.getElementById("mainburguerimg").src =
       "images/chicken-nuggets.jpg";
     // change the current sign value to on
