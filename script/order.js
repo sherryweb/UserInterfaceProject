@@ -28,7 +28,6 @@ function start() {
     var btn = addToCartBtn[i];
     btn.addEventListener("click", addToCartEvent);
   }
-
 }
 
 function removeCartItem(event) {
@@ -100,14 +99,13 @@ function updateCartTotal() {
   }
   subtotal = Math.round(subtotal * 100) / 100;
   tax=(subtotal*TAX_RATE).toFixed(2);
-  total=subtotal+tax;
+  // total=subtotal+tax;
+  total=parseFloat(subtotal)+parseFloat(tax);
   // document.getElementsByClassName("cart-subtotal")[0].innerText = "$" + subtotal;
   document.getElementById("subtotalValue").value = "$" + subtotal;
   document.getElementsByClassName("cart-tax")[0].innerText = "$" + tax;
   document.getElementsByClassName("cart-totalPrice")[0].innerText = "$" + total;
 }
-
-
 
 /*********************************** JS for passing data to checkout page ***********************************/
 function placeOrderClicked() {
@@ -118,39 +116,6 @@ function placeOrderClicked() {
   return;
 }
 
-
-// document.getElementsByClassName("btnPlaceOrder")[0].addEventListener("click", placeOrderClicked);
-  // var cartNewItems = document.getElementsByClassName("cart-items")[0];
-  // while (cartNewItems.hasChildNodes()) {
-  //   cartNewItems.removeChild(cartNewItems.firstChild);
-  // }
-  // updateCartTotal();
-
-
-// const placeOrderBtn=document.getElementsByClassName("btnPlaceOrder"); 
-
-// placeOrderBtn.onclick = event => {
-//   window.location.href='checkout.html'
-// };
-
-
-  // event.preventDefault();
-  // data = getFormData();
-  // localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
-  // const message = "Form draft has been saved!";
-  // displayAlert(message);
-
-// function placeOrderClicked() {
-//   var cartNewItems = document.getElementsByClassName("cart-items")[0];
-//   while (cartNewItems.hasChildNodes()) {
-//     cartNewItems.removeChild(cartNewItems.firstChild);
-//   }
-//   updateCartTotal();
-//   window.location.href='checkout.html';
-
-//   const subtotalVal=document.getElementById("subtotalValue");
-//   localStorage.setItem("subtotal",subtotalVal);
-// }
 
 /*********************************** Ajax for button click ***********************************/
 function loadContent(){
@@ -166,26 +131,3 @@ function loadContent(){
 }
 
 /*********************************** JS for cart page,another solution ***********************************/
-
-// let itemsArray = localStorage.getItem('btnitems') ? JSON.parse(localStorage.getItem('btnitems')) : [];
-// localStorage.setItem('btnitems', JSON.stringify(itemsArray));
-
-
-// window.onload=function(){
-//     var addbtnlist=document.getElementsByTagName('button');
-//     var length=addbtnlist.length;
-//     for(var i=0;i<length;i++){
-//         var btn=addbtnlist[i];
-//         btn.index=i;
-//         btn.onclick=function(){
-//             alert(this.index+1);
-//         }
-//     }
-// }
-
-// addbtn.addEventListener('click', function (e) {
-//     e.preventDefault();
-
-//     itemsArray.push(input.value);
-//     localStorage.setItem('btnitems', JSON.stringify(itemsArray));
-//   });

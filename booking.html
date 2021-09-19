@@ -70,18 +70,18 @@
             <form name="bookingForm" id="bookingForm"  onsubmit="return validateForm();"
             onreset="location.reload();">
               <div class="control-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Name" />
+                <!-- <div class="input-group"> -->
+                  <input type="text" class="form-control" placeholder="Name"  id="nameInput"/>
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <i style="color: black;" class="far fa-user"></i>
                     </div>
                   </div>
-                </div>
+                <!-- </div> -->
               </div>
               <div class="control-group">
                 <div class="input-group">
-                  <input type="email" class="form-control" placeholder="Email"  />
+                  <input type="email" class="form-control" placeholder="Email" id="emailInput" />
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <i style="color: black;" class="far fa-envelope"></i>
@@ -91,7 +91,7 @@
               </div>
               <div class="control-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Mobile"  />
+                  <input type="text" class="form-control" placeholder="Mobile" id="mobile" />
                   <div class="input-group-append">
                     <div class="input-group-text">
                       <i  style="color: black;" class="fa fa-mobile-alt"></i>
@@ -100,8 +100,8 @@
                 </div>
               </div>
               <div class="control-group">
-                <div class="input-group date" id="date">
-                  <input type="date" class="form-control" />
+                <div class="input-group date" >
+                  <input type="date" class="form-control" id="dateSelect"/>
                   <div class="input-group-append">
                     <div class="input-group-text">
                    
@@ -110,8 +110,8 @@
                 </div>
               </div>
               <div class="control-group">
-                <div class="input-group time" id="time">
-                  <input type="time" class="form-control" />
+                <div class="input-group time" >
+                  <input type="time" class="form-control" id="timeSelect"/>
                   <div class="input-group-append">
                     <div class="input-group-text">
                     </div>
@@ -120,8 +120,8 @@
               </div>
               <div class="control-group">
                 <div class="input-group">
-                  <select class="custom-select form-control">
-                    <option selected>Guest</option>
+                  <select class="custom-select form-control" id="guestSelect" >
+                    <option selected>--Please Select--</option>
                     <option value="1">1 Guest</option>
                     <option value="2">2 Guest</option>
                     <option value="3">3 Guest</option>
@@ -172,7 +172,10 @@
     <h2>Delivery</h2>
     <h3>&copy;2021 Los Pollos Hermanos'. All Rights Reserved.</h3>
   </footer>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="script/index.js" defer></script>
+  <script src="script/booking.js" defer></script>
 </body>
 
 </html>

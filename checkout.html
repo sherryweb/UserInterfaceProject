@@ -6,18 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Checkout | Los Pollos Hermanos</title>
-  <link rel="stylesheet" href="css/stylesheet.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/menu.css" />
   <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png" />
   <!-- CSS Libraries -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap");
   </style>
    <link href="css/checkout.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 
 <body>
@@ -42,7 +40,6 @@
     <!-- Checkout Start -->
     <form name="checkoutform" id="checkoutform" action="checkoutDone.html" onsubmit="return validateCheckingForm();"
       onreset="location.reload();">
-      <main>
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-8">
@@ -214,9 +211,9 @@
                 <div class="checkout-summary">
                   <h1>Cart Total</h1>
                   <p class="sub-total">Sub Total<span id="subTotalCheckout">$99</span></p>
-                  <p class="sub-tax">Tax<span>$1</span></p>
-                  <p class="ship-cost">Shipping Cost<span>$1</span></p>
-                  <h2>Grand Total<span>$100</span></h2>
+                  <p class="sub-tax">Tax<span class="taxValue">$1</span></p>
+                  <p class="ship-cost">Shipping Cost<span class="shippingValue">$1</span></p>
+                  <h2>Grand Total<span class="grandtotalValue">$100</span></h2>
                 </div>
 
                 <div class="checkout-payment">
@@ -237,27 +234,29 @@
                     <br />
 
                     <div class="control-group">
-                      <div class="input-group date" id="date" data-target-input="nearest">
-                        <input type="date" name="date" class="form-control datetimepicker-input" data-target="#date"
+                      <!-- <div class="input-group date" data-target-input="nearest"> -->
+                        <!-- <input type="date" id="dateinput" class="form-control datetimepicker-input" data-target="#date"
                           data-toggle="datetimepicker" />
                         <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
                           <div class="input-group-text">
-                           
                           </div>
-                        </div>
-                      </div>
+                        </div> -->
+                      <!-- </div> -->
+                      <label for="dateinput">Date</label>
+                      <input type="date" id="dateinput" name="date" required="required" />
                     </div>
 
                     <div class="control-group">
-                      <div class="input-group time" id="time" data-target-input="nearest">
-                        <input type="time" name="time" class="form-control datetimepicker-input" data-target="#time"
+                      <!-- <div class="input-group time" data-target-input="nearest"> -->
+                        <!-- <input type="time" id="timeinput" class="form-control datetimepicker-input" data-target="#time"
                           data-toggle="datetimepicker" />
                         <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
                           <div class="input-group-text">
-                         
                           </div>
-                        </div>
-                      </div>
+                        </div> -->
+                      <!-- </div> -->
+                      <label for="timeinput">Time</label>
+                      <input type="time" id="timeinput" name="time" required="required" />
                     </div>
                   </div>
 
@@ -269,7 +268,6 @@
             </div>
           </div>
         </div>
-      </main>
       <!-- Checkout End -->
     </form>
 
@@ -294,9 +292,12 @@
     <h2>Delivery</h2>
     <h3>&copy;2021 Los Pollos Hermanos'. All Rights Reserved.</h3>
   </footer>
+
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="script/checkout.js"></script>
+  <!-- <script src="lib/picker.time.js"></script>
+  <script src="lib/picker.date.js"></script> -->
   <script src="script/index.js" defer></script>
 </body>
 

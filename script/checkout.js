@@ -1,15 +1,7 @@
+
+/*************************** jQuery for ship address part ***************************/
 (function ($) {
     "use strict";
-
-    window.addEventListener('load',()=>{
-        // const params=(new URL(document.location)).searchParams;
-        // const name=params.get('name');
-        // const surname=params.get('surname');
-
-        const subValue=localStorage.getItem('subtotalPassing');
-        document.getElementById('subTotalCheckout').innerHTML=subValue;
-    })
-
 
     // Shipping address show hide function
     $('.checkout #shipto').change(function () {
@@ -31,12 +23,29 @@
 })(jQuery);
 
 
- //$('.timepicker').pickatime({
-    //    min: [10,30],
-    //   max: [22,00]
-    // })
+//$('.timepicker').pickatime({
+//    min: [10,30],
+//   max: [22,00]
+// })
+
+/*************************** get data from order page and caculate price ***************************/
+window.addEventListener('load', () => {
+    const subValue = localStorage.getItem('subtotalPassing');
+    document.getElementById('subTotalCheckout').innerHTML = subValue;
+    var tax=0;
+    var total=0;
+    var subTotal=subValue.replace(/[^0-9.-]+/g,"");
+    const TAX_RATE=0.15;
+    var shippingValue=5;
+    tax=(subTotal*TAX_RATE).toFixed(2);
+    total=(parseFloat(subTotal)+parseFloat(tax)+shippingValue).toFixed(2);
+    document.getElementsByClassName("taxValue")[0].innerText = "$" + tax;
+    document.getElementsByClassName("shippingValue")[0].innerText = "$" + shippingValue;   
+    document.getElementsByClassName("grandtotalValue")[0].innerText = "$" + total;
+})
 
 
+/*************************** validate input part ***************************/
 function validateCheckingForm() {
     // decalre variables
     let fnameBilling = document.getElementById('firstNameBilling');
@@ -47,41 +56,38 @@ function validateCheckingForm() {
     let addressBilling = document.getElementById("addressBilling");
     let cityBilling = document.getElementById("cityBilling");
     let pcodeBilling = document.getElementById("postalcodeBilling");
-    let paymentOption=document.getElementsByName('payment');
+    let paymentOption = document.getElementsByName('payment');
     let namePayment = document.getElementById('cc-name');
     let numberPayment = document.getElementById('cc-number');
     let eDatePayment = document.getElementById('cc-expiration');
     let cvvPayment = document.getElementById('cc-cvv');
-    let deliveryOption=document.getElementsByName('delivery');
-    let dateDelivery = document.getElementByName('date');
-    let timeDelivery = document.getElementByName('time');
-
-
-
+    let deliveryOption = document.getElementsByName('delivery');
+    let selectedDate = document.getElementById("dateinput");
+    let selectedTime = document.getElementById("timeinput");
 
     // validate first  name
     if (fnameBilling.value.length === 0) {
         window.alert('Please enter your first name');
         fnameBilling.focus();
         return false;
-    }  
-     // validate last name
-    else if (lnameBilling.value.length === 0) {     
+    }
+    // validate last name
+    else if (lnameBilling.value.length === 0) {
         window.alert('Please enter your last name');
         lnameBilling.focus();
         return false;
 
-     } 
-     //validate email address
-    else if (!emailBilling.value.match(emailPattern)) {    
+    }
+    //validate email address
+    else if (!emailBilling.value.match(emailPattern)) {
         window.alert("Please correct email address");
         // emailBilling=null;
         emailBilling.focus();
-      //  emailBilling.style.backgroundColor = 'yellow';
+        //  emailBilling.style.backgroundColor = 'yellow';
         return false;
-    }   
-   //validate mobile no. 
-   else if  (mobileBilling.value.length === 0) {
+    }
+    //validate mobile no. 
+    else if (mobileBilling.value.length === 0) {
         alert("Please enter your phone number");
         mobileBilling.focus();
         // If the user hasn't completed the field, changes its background color to yellow
@@ -90,23 +96,23 @@ function validateCheckingForm() {
     }
 
     //validate address 
-    else if (addressBilling.value.length === 0) { 
+    else if (addressBilling.value.length === 0) {
         window.alert('Please enter your address');
         addressBilling.focus();
         return false;
     }
     //validate city         
-    
-   else if (cityBilling.selectedIndex === 0) {
+
+    else if (cityBilling.selectedIndex === 0) {
         alert("Please select a city.");
         cityBilling.focus();
         // If the user hasn't completed the field, 
         // changes its background color to yellow
-       // cityBilling.style.backgroundColor = "yellow";
+        // cityBilling.style.backgroundColor = "yellow";
         return false;
-    } 
+    }
     //validate postal code       
-    else if (pcodeBilling.value.length === 0) { 
+    else if (pcodeBilling.value.length === 0) {
         window.alert('Please enter your postal code');
         pcodeBilling.focus();
         return false;
@@ -116,28 +122,28 @@ function validateCheckingForm() {
         alert("Please select your payment method");
         return false;
     }
-        
+
     //validate payment-card-name  
-    else if (namePayment.value.length === 0) { 
+    else if (namePayment.value.length === 0) {
         window.alert('Please enter name on your card');
         namePayment.focus();
         return false;
     }
 
     //validate payment-card-number
-    else if (numberPayment.value.length === 0) { 
+    else if (numberPayment.value.length === 0) {
         window.alert('Please enter your card number');
         numberPayment.focus();
         return false;
     }
     //validate payment-card-expiradate
-    else if (eDatePayment.value.length === 0) { 
+    else if (eDatePayment.value.length === 0) {
         window.alert('Please enter expiration date on your card');
         eDatePayment.focus();
         return false;
     }
     //validate payment-card-cvv
-    else if (cvvPayment.value.length === 0) { 
+    else if (cvvPayment.value.length === 0) {
         window.alert('Please enter your cvv number');
         cvvPayment.focus();
         return false;
@@ -149,15 +155,15 @@ function validateCheckingForm() {
     }
 
     //validate delivery date  
-    else if (dateDelivery.value.length === 0) { 
-        window.alert('Please select your delivery date');
-        dateDelivery.focus();
+    else if (selectedDate.value == "") {
+        alert("Please select your delivery date");
+        selectedDate.focus();
         return false;
     }
     //validate delivery time  
-    else if (timeDelivery.value.length === 0) { 
-        window.alert('Please select your delivery time');
-        timeDelivery.focus();
+    else if (selectedTime.value == "") {
+        alert("Please select your delivery time");
+        selectedTime.focus();
         return false;
     }
     else {
