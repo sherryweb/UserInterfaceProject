@@ -112,6 +112,11 @@ main {
   text-align: center;
   font-size: x-large;
 }
+#mainHeading{
+  color:white;
+  text-align: center;
+  font-family: "Lemon", cursive;
+}
 #mainContent {
   height: 850px;
   width: 50%;
@@ -148,6 +153,13 @@ div#countdown {
     font-size: 2em;   
     color:black;
     font-style:normal;
+ }
+ #promotion_info{
+   position:absolute;
+   margin-left:550px;
+   margin-top:800px;
+   color:#540b0e;
+   font-weight: 700;
  }
 
 #rightSidebar {
