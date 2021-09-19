@@ -67,7 +67,8 @@
         </div>
         <div class="col-lg-5">
           <div class="booking-form">
-            <form>
+            <form name="bookingForm" id="bookingForm"  onsubmit="return validateForm();"
+            onreset="location.reload();">
               <div class="control-group">
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Name" />

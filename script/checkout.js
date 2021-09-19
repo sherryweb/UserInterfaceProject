@@ -37,7 +37,7 @@
     // })
 
 
-function validateForm() {
+function validateCheckingForm() {
     // decalre variables
     let fnameBilling = document.getElementById('firstNameBilling');
     let lnameBilling = document.getElementById('lastNameBilling');
