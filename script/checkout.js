@@ -43,8 +43,8 @@ function validateForm() {
     let eDatePayment = document.getElementById('cc-expiration');
     let cvvPayment = document.getElementById('cc-cvv');
     let deliveryOption=document.getElementsByName('delivery');
-    let dateDelivery = document.getElementById('date');
-    let timeDelivery = document.getElementById('time');
+    let dateDelivery = document.getElementByName('date');
+    let timeDelivery = document.getElementByName('time');
 
 
 
@@ -88,7 +88,7 @@ function validateForm() {
     //validate city         
     
    else if (cityBilling.selectedIndex === 0) {
-        alert("Please select a province.");
+        alert("Please select a city.");
         cityBilling.focus();
         // If the user hasn't completed the field, 
         // changes its background color to yellow
