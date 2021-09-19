@@ -1,143 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order Online | Los Pollos Hermanos</title>
-    <meta name="author" content="Jia Zhu, Tingting Song, Xiaotong Zhang" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/order.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png" />
-    <script src="script/order.js" defer></script>
-    <!-- CSS Libraries -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap");
-    </style>
-  </head>
 
-  <body class="orderbody">
-    <header>
-      <img
-        src="images/Los_Pollos_Hermanos_logo.png"
-        alt="Logo of Los Pollos Hermanos"
-      />
-      <h1>Fast-food restaurant</h1>
-      <nav>
-        <h2><a href="index.html">Home</a></h2>
-        <h2><a href="promotions.html">Promotions</a></h2>
-        <h2><a href="booking.html">Booking</a></h2>
-        <h2><a href="event.html">Event</a></h2>
-        <h2><a href="order.html">Order Online</a></h2>
-        <h2><a href="contact-us.html">Contact Us</a></h2>
-        <h2><a href="cart.html"><i class="fa fa-shopping-bag"></i>&nbsp;Cart</a></h2>
-        <h2><a href="order-fr.html">FR</a></h2>
-      </nav>
-      <h2 id="timeHeading">Welcome!</h2>
-      <div id="dateNow">20/02/2020<br />6:45:12 p.m.</div>
-    </header>
-    <section class="orderSection">
-      <div class="orderMenu">
-        <!-- start of orderMenu class-->
-        <div class="menu-header">
-          <!-- start of menu header-->
-          <h1>Online Order</h1>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#burgers">Burgers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sides">Sides</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#drinks">Beverages</a>
-            </li>
-          </ul>
-        </div>
-        <!-- end of menu header-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Online | Los Pollos Hermanos</title>
+  <meta name="author" content="Jia Zhu, Tingting Song, Xiaotong Zhang" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <link rel="stylesheet" href="css/order.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+  <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png" />
+  <script src="script/index.js" defer></script>
+  <script src="script/order.js" defer></script>
+  <!-- CSS Libraries -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap");
+  </style>
+</head>
 
-        <div class="ajaxDiv">
-          <button class="showBtn" onclick="loadContent()">
-            Show Top 3 of this month!</button
-          ><span id="resultContent"></span>
-        </div>
+<body class="orderbody">
+  <header>
+    <img src="images/Los_Pollos_Hermanos_logo.png" alt="Logo of Los Pollos Hermanos" />
+    <h1>Fast-food restaurant</h1>
+    <nav>
+      <h2><a href="index.html">Home</a></h2>
+      <h2><a href="promotions.html">Promotions</a></h2>
+      <h2><a href="booking.html">Booking</a></h2>
+      <h2><a href="event.html">Event</a></h2>
+      <h2><a href="order.html">Order Online</a></h2>
+      <h2><a href="contact-us.html">Contact Us</a></h2>
+      <h2><a href="cart.html"><i class="fa fa-shopping-bag"></i>&nbsp;Cart</a></h2>
+      <h2><a href="order-fr.html">FR</a></h2>
+    </nav>
+    <h2 id="timeHeading">Welcome!</h2>
+    <div id="dateNow">20/02/2020<br />6:45:12 p.m.</div>
+  </header>
+  <section class="orderSection">
+    <div class="orderMenu">
+      <!-- start of orderMenu class-->
+      <div class="menu-header">
+        <!-- start of menu header-->
+        <h1>Online Order</h1>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#burgers">Burgers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sides">Sides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#drinks">Beverages</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end of menu header-->
 
-        <!-- start of orderLists class -->
-        <div class="orderLists">
-          <!-- start of burgers menu -->
-          <div id="burgers " class="burgerdiv">
-            <h2>Burgers</h2>
-            <div class="menu-list">
-              <!--start of menu item of burgers-->
-              <div class="menu-item">
-                <span class="menu-title">Cheeseburger</span>
-                <img class="menu-image" src="images/img1.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$9.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+      <div class="ajaxDiv">
+        <button class="showBtn" onclick="loadContent()">
+          Show Top 3 of this month!</button><span id="resultContent"></span>
+      </div>
+
+      <!-- start of orderLists class -->
+      <div class="orderLists">
+        <!-- start of burgers menu -->
+        <div id="burgers " class="burgerdiv">
+          <h2>Burgers</h2>
+          <div class="menu-list">
+            <!--start of menu item of burgers-->
+            <div class="menu-item">
+              <span class="menu-title">Cheeseburger</span>
+              <img class="menu-image" src="images/img1.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$9.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 1-->
+            </div>
+            <!-- menu item 1-->
 
-              <div class="menu-item">
-                <span class="menu-title">Double Cheeseburger</span>
-                <img class="menu-image" src="images/img2.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$11.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Double Cheeseburger</span>
+              <img class="menu-image" src="images/img2.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$11.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 2-->
+            </div>
+            <!-- menu item 2-->
 
-              <div class="menu-item">
-                <span class="menu-title">Bacon Cheeseburger</span>
-                <img class="menu-image" src="images/img3.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$13.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Bacon Cheeseburger</span>
+              <img class="menu-image" src="images/img3.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$13.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 3-->
+            </div>
+            <!-- menu item 3-->
 
-              <div class="menu-item">
-                <span class="menu-title">Grilled Chicken Burger</span>
-                <img class="menu-image" src="images/img4.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$14.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Grilled Chicken Burger</span>
+              <img class="menu-image" src="images/img4.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$14.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 4-->
+            </div>
+            <!-- menu item 4-->
 
-              <div class="menu-item">
-                <span class="menu-title">BBQ Chicken Burger</span>
-                <img class="menu-image" src="images/img5.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$22.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">BBQ Chicken Burger</span>
+              <img class="menu-image" src="images/img5.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$22.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 5-->
+            </div>
+            <!-- menu item 5-->
 
-              <!-- <div class="menu-item">
+            <!-- <div class="menu-item">
               <span class="menu-title">Mexican Chicken Burger</span>
               <img class="menu-image" src="images/img6.jpg" alt="Image" />
               <div class="menu-detail">
@@ -147,78 +140,78 @@
                 </button>
               </div>
             </div> -->
-              <!-- menu item 6-->
-            </div>
-            <!--end of menu-list of burgers-->
+            <!-- menu item 6-->
           </div>
-          <!-- end of id burgers part-->
+          <!--end of menu-list of burgers-->
+        </div>
+        <!-- end of id burgers part-->
 
-          <!-- start of sides menu -->
-          <div id="sides" class="sidediv">
-            <h2>Sides</h2>
-            <div class="menu-list">
-              <div class="menu-item">
-                <!--start of menu item of sides-->
-                <span class="menu-title">Popcorn Chicken</span>
-                <img class="menu-image" src="images/img7.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$12.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+        <!-- start of sides menu -->
+        <div id="sides" class="sidediv">
+          <h2>Sides</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <!--start of menu item of sides-->
+              <span class="menu-title">Popcorn Chicken</span>
+              <img class="menu-image" src="images/img7.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$12.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 1-->
+            </div>
+            <!-- menu item 1-->
 
-              <div class="menu-item">
-                <span class="menu-title">Chicekn Nuggets</span>
-                <img class="menu-image" src="images/img8.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$13.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Chicekn Nuggets</span>
+              <img class="menu-image" src="images/img8.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$13.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 2-->
+            </div>
+            <!-- menu item 2-->
 
-              <div class="menu-item">
-                <span class="menu-title">Poutine</span>
-                <img class="menu-image" src="images/img9.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$15.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Poutine</span>
+              <img class="menu-image" src="images/img9.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$15.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 3-->
+            </div>
+            <!-- menu item 3-->
 
-              <div class="menu-item">
-                <span class="menu-title">Fries</span>
-                <img class="menu-image" src="images/img10.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$12.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Fries</span>
+              <img class="menu-image" src="images/img10.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$12.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 4-->
+            </div>
+            <!-- menu item 4-->
 
-              <div class="menu-item">
-                <span class="menu-title">Chicken Wings</span>
-                <img class="menu-image" src="images/img11.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$22.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Chicken Wings</span>
+              <img class="menu-image" src="images/img11.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$22.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 5-->
+            </div>
+            <!-- menu item 5-->
 
-              <!-- <div class="menu-item">
+            <!-- <div class="menu-item">
               <span class="menu-title"><br>Salad</span>
               <img class="menu-image" src="images/img12.jpg" alt="Image" />
               <div class="menu-detail">
@@ -228,78 +221,78 @@
                 </button>
               </div>
             </div> -->
-              <!-- menu item 6-->
-            </div>
-            <!--end of menu-list of sides-->
+            <!-- menu item 6-->
           </div>
-          <!-- end of id sides part-->
+          <!--end of menu-list of sides-->
+        </div>
+        <!-- end of id sides part-->
 
-          <!-- start of drinks menu -->
-          <div id="drinks" class="drinkdiv">
-            <h2>Beverages</h2>
-            <div class="menu-list">
-              <div class="menu-item">
-                <!--start of menu item of burgers-->
-                <span class="menu-title">Coca-Cola</span>
-                <img class="menu-image" src="images/img13.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$5.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+        <!-- start of drinks menu -->
+        <div id="drinks" class="drinkdiv">
+          <h2>Beverages</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <!--start of menu item of burgers-->
+              <span class="menu-title">Coca-Cola</span>
+              <img class="menu-image" src="images/img13.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$5.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 1-->
+            </div>
+            <!-- menu item 1-->
 
-              <div class="menu-item">
-                <span class="menu-title">Iced Tea</span>
-                <img class="menu-image" src="images/img14.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$5.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Iced Tea</span>
+              <img class="menu-image" src="images/img14.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$5.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 2-->
+            </div>
+            <!-- menu item 2-->
 
-              <div class="menu-item">
-                <span class="menu-title">Coffee</span>
-                <img class="menu-image" src="images/img15.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$3.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Coffee</span>
+              <img class="menu-image" src="images/img15.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$3.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 3-->
+            </div>
+            <!-- menu item 3-->
 
-              <div class="menu-item">
-                <span class="menu-title">Hot Chocolate</span>
-                <img class="menu-image" src="images/img16.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$6.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Hot Chocolate</span>
+              <img class="menu-image" src="images/img16.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$6.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 4-->
+            </div>
+            <!-- menu item 4-->
 
-              <div class="menu-item">
-                <span class="menu-title">Lemon Soda</span>
-                <img class="menu-image" src="images/img17.jpg" alt="Image" />
-                <div class="menu-detail">
-                  <span class="menu-price">$3.00</span>
-                  <button class="order-button" type="button">
-                    ADD TO CART
-                  </button>
-                </div>
+            <div class="menu-item">
+              <span class="menu-title">Lemon Soda</span>
+              <img class="menu-image" src="images/img17.jpg" alt="Image" />
+              <div class="menu-detail">
+                <span class="menu-price">$3.00</span>
+                <button class="order-button" type="button">
+                  ADD TO CART
+                </button>
               </div>
-              <!-- menu item 5-->
+            </div>
+            <!-- menu item 5-->
 
-              <!-- <div class="menu-item">
+            <!-- <div class="menu-item">
               <span class="menu-title">Fruit<br>Smoothies</span>
               <img class="menu-image" src="images/img18.jpg" alt="Image" />
               <div class="menu-detail">
@@ -309,82 +302,75 @@
                 </button>
               </div>
             </div> -->
-              <!-- menu item 6-->
-            </div>
-            <!--end of menu-list of drinks-->
+            <!-- menu item 6-->
           </div>
-          <!-- end of id drinks part-->
+          <!--end of menu-list of drinks-->
         </div>
-        <!-- end of orderLists class -->
+        <!-- end of id drinks part-->
       </div>
-      <!-- end of orderMenu class-->
+      <!-- end of orderLists class -->
+    </div>
+    <!-- end of orderMenu class-->
 
 
-      <form id="placeOrderForm">
+    <form id="placeOrderForm">
       <!-- <form action="checkout.html" method="POST" id="placeOrderForm"> -->
-        <section class="cart-section">
-          <h2 class="cart-header">CART</h2>
-          <div class="cart-row">
-            <span class="cart-item cart-column">Item</span>
-            <span class="cart-price cart-column">Price</span>
-            <span class="cart-quantity cart-column">Quantity</span>
-          </div>
-  
-          <div class="cart-items"><!--cart items add here--></div>
-  
-          <div class="cart-total">
-            <br />
-            <strong class="cart-total-title">Sub Total</strong>
-            <!-- <span class="cart-subtotal" id="subtotalValue">$0</span> -->
-            <span class="cart-subtotal" ><input type="text" value="" id="subtotalValue" readonly></span>            
-          </div>
-          <div class="cart-total">
-            <strong class="cart-total-title">Tax</strong>
-            <span class="cart-tax">$0</span>
-          </div>
-          <div class="cart-total">
-            <strong class="cart-total-title">Grand Total</strong>
-            <span class="cart-totalPrice">$0</span>
-          </div>
-          <!-- <button class="btnPlaceOrder" id="placeBtn"> Place Order</button> -->
-          <input type="submit" class="btnPlaceOrder" id="placeBtn" value="Place Order" onclick="placeOrderClicked()">
-        </section>
-      </form>
-     
-      <!-- same content with index  -->
-      <div class="app">
-        <div id="appdownloadleft">
-          <a href="https://www.apple.com/ca/app-store/"
-            ><img
-              id="appstore"
-              src="images/App-Store-resized.jpg"
-              alt="Download our app on App Store"
-          /></a>
+      <section class="cart-section">
+        <h2 class="cart-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-column">Item</span>
+          <span class="cart-price cart-column">Price</span>
+          <span class="cart-quantity cart-column">Quantity</span>
         </div>
-        <div id="appdownloadright">
-          <a href="https://play.google.com/"
-            ><img
-              id="googleplay"
-              src="images/Google-Play-resized.png"
-              alt="Download our app on Google Play"
-          /></a>
-        </div>
-      </div>
-    </section>
 
-    <footer>
-      <h2>About Us</h2>
-      <h2>Privacy Policy</h2>
-      <h2>Terms &amp; Conditions</h2>
-      <h2>FAQs</h2>
-      <h2>Delivery</h2>
-      <h3>
-        &copy;2021 Los Pollos Hermanos'. All Rights Reserved.
-        &nbsp;&nbsp;&nbsp;<span
-          >By Team: Xiaotong Zhang,&nbsp;Jia Zhu,&nbsp;Tingting Song</span
-        >
-      </h3>
-    </footer>
-    <script src="script/index.js" defer></script>
-  </body>
+        <div class="cart-items">
+          <!--cart items add here-->
+        </div>
+
+        <div class="cart-total">
+          <br />
+          <strong class="cart-total-title">Sub Total</strong>
+          <!-- <span class="cart-subtotal" id="subtotalValue">$0</span> -->
+          <span class="cart-subtotal"><input type="text" value="" id="subtotalValue" readonly></span>
+        </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Tax</strong>
+          <span class="cart-tax">$0</span>
+        </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Grand Total</strong>
+          <span class="cart-totalPrice">$0</span>
+        </div>
+        <!-- <button class="btnPlaceOrder" id="placeBtn"> Place Order</button> -->
+        <input class="btnPlaceOrder" id="placeBtn" value="Place Order" onclick="placeOrderClicked()" readonly>
+      </section>
+    </form>
+
+    <!-- same content with index  -->
+    <div class="app">
+      <div id="appdownloadleft">
+        <a href="https://www.apple.com/ca/app-store/"><img id="appstore" src="images/App-Store-resized.jpg"
+            alt="Download our app on App Store" /></a>
+      </div>
+      <div id="appdownloadright">
+        <a href="https://play.google.com/"><img id="googleplay" src="images/Google-Play-resized.png"
+            alt="Download our app on Google Play" /></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>About Us</h2>
+    <h2>Privacy Policy</h2>
+    <h2>Terms &amp; Conditions</h2>
+    <h2>FAQs</h2>
+    <h2>Delivery</h2>
+    <h3>
+      &copy;2021 Los Pollos Hermanos'. All Rights Reserved.
+      &nbsp;&nbsp;&nbsp;<span>By Team: Xiaotong Zhang,&nbsp;Jia Zhu,&nbsp;Tingting Song</span>
+    </h3>
+  </footer>
+
+</body>
+
 </html>
