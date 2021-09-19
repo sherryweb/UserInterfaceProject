@@ -149,6 +149,13 @@ div#countdown {
     color:black;
     font-style:normal;
  }
+ #promotion_info{
+   position:absolute;
+   margin-left:550px;
+   margin-top:800px;
+   color:#540b0e;
+   font-weight: 700;
+ }
 
 #rightSidebar {
   font-size: large;
