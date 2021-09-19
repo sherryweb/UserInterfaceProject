@@ -112,6 +112,11 @@ main {
   text-align: center;
   font-size: x-large;
 }
+#mainHeading{
+  color:white;
+  text-align: center;
+  font-family: "Lemon", cursive;
+}
 #mainContent {
   height: 850px;
   width: 50%;
