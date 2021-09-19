@@ -101,7 +101,8 @@ function updateCartTotal() {
   subtotal = Math.round(subtotal * 100) / 100;
   tax=(subtotal*TAX_RATE).toFixed(2);
   total=subtotal+tax;
-  document.getElementsByClassName("cart-subtotal")[0].innerText = "$" + subtotal;
+  // document.getElementsByClassName("cart-subtotal")[0].innerText = "$" + subtotal;
+  document.getElementById("subtotalValue").value = "$" + subtotal;
   document.getElementsByClassName("cart-tax")[0].innerText = "$" + tax;
   document.getElementsByClassName("cart-totalPrice")[0].innerText = "$" + total;
 }
@@ -109,23 +110,35 @@ function updateCartTotal() {
 
 
 /*********************************** JS for passing data to checkout page ***********************************/
-
-// document.getElementsByClassName("btn-placeOrder")[0].addEventListener("click", placeOrderClicked);
-
-const placeOrderBtn=document.getElementsByClassName("btn-placeOrder"); 
-
-placeOrderBtn.onclick = event => {
+function placeOrderClicked() {
+  const subtotalVal=document.getElementById("subtotalValue");
+  localStorage.setItem("subtotalPassing",subtotalVal.value);
+  
   window.location.href='checkout.html';
-};
+  return;
+}
+
+
+// document.getElementsByClassName("btnPlaceOrder")[0].addEventListener("click", placeOrderClicked);
+  // var cartNewItems = document.getElementsByClassName("cart-items")[0];
+  // while (cartNewItems.hasChildNodes()) {
+  //   cartNewItems.removeChild(cartNewItems.firstChild);
+  // }
+  // updateCartTotal();
+
+
+// const placeOrderBtn=document.getElementsByClassName("btnPlaceOrder"); 
+
+// placeOrderBtn.onclick = event => {
+//   window.location.href='checkout.html'
+// };
+
 
   // event.preventDefault();
   // data = getFormData();
   // localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
   // const message = "Form draft has been saved!";
   // displayAlert(message);
-
-
-
 
 // function placeOrderClicked() {
 //   var cartNewItems = document.getElementsByClassName("cart-items")[0];
@@ -137,7 +150,6 @@ placeOrderBtn.onclick = event => {
 
 //   const subtotalVal=document.getElementById("subtotalValue");
 //   localStorage.setItem("subtotal",subtotalVal);
-
 // }
 
 /*********************************** Ajax for button click ***********************************/
@@ -152,56 +164,6 @@ function loadContent(){
   xhttp.open("GET", "/json/orderlist.json", true);
   xhttp.send();
 }
-
-// // const rankingBody = document.querySelector("#rankings- menu-title > menu-item")
-
-// const rankingBody =  document.getElementsByClassName("menu-title")
-// //console.log(rankingBody);
-
-// function loadRankings(){
-//   const request = new XMLHttpRequest();
-
-//   request.open("get","data/rankings.json");
-
-//   request.onload = () => {
-//     try{
-//    const json = JSON.prase(request.responseText);
-//    populateRankings(json);
-//   } catch (e) {
-//      console.warn("Could not load ranking!");
-//   }
-//   };
-//   request.send();
-
-// }
-
-// function populateRankings (json){
-//    console.log(json);
-//    //clear out existing table data
-//   while (rankingBody.firstChild){
-//     rankingBody.removeChild(rankingBody.firstChild);
-//   }
- 
-// //populate table
-// json.forEach((row) => {
-//   const tr = document.createElement("tr");
-
-//   row.forEach((cell) => {
-//    const td = document.createElement("td");
-//    td.textContent = cell;
-//    tr.appendChild(td);
-//   })
-
-//   rankingBody.appendChild(tr);
-// });
-// }
-
-// document.addEventListener("DOMContentLoaded,() => { loadRankings(); }");
-
-
-
-
-
 
 /*********************************** JS for cart page,another solution ***********************************/
 

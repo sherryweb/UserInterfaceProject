@@ -1,6 +1,16 @@
 (function ($) {
     "use strict";
 
+    window.addEventListener('load',()=>{
+        // const params=(new URL(document.location)).searchParams;
+        // const name=params.get('name');
+        // const surname=params.get('surname');
+
+        const subValue=localStorage.getItem('subtotalPassing');
+        document.getElementById('subTotalCheckout').innerHTML=subValue;
+    })
+
+
     // Shipping address show hide function
     $('.checkout #shipto').change(function () {
         if ($(this).is(':checked')) {

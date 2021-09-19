@@ -10,25 +10,22 @@ let productNames=[
     'Lemon Soda','Fruit Smoothies'
 ];
 
+// function updateCartRow(){
+//     if(btnIndexArray!=null){
 
-function updateCartRow(){
-    if(btnIndexArray!=null){
+//     }
+// }
 
-    }
-}
+// addbtn.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     itemsArray.push(input.value);
+//     localStorage.setItem('btnitems', JSON.stringify(itemsArray));
+//     liMaker(input.value);
+//     input.value = "";
+//   });
 
-
-addbtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    itemsArray.push(input.value);
-    localStorage.setItem('btnitems', JSON.stringify(itemsArray));
-    liMaker(input.value);
-    input.value = "";
-  });
-
-
-const liMaker = (text) => {
-    const li = document.createElement('li');
-    li.textContent = text;
-    ul.appendChild(li);
-  }
+// const liMaker = (text) => {
+//     const li = document.createElement('li');
+//     li.textContent = text;
+//     ul.appendChild(li);
+//   }

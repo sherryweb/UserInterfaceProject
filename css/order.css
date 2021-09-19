@@ -231,6 +231,12 @@ div#dateNow {
   border-radius: 0.5em;
 }
 
+#subtotalValue{
+  background-color: #f0ca8d;
+  padding: 0.2em;
+  text-align: right;
+  font-family: "Lemon", cursive;
+}
 .cart-total {
   text-align: end;
   margin-top: 1em;
@@ -249,7 +255,7 @@ div#dateNow {
   font-size: 1.1em;
 }
 
-.btn-placeOrder{
+.btnPlaceOrder{
   display: block;
   margin: 1em auto 1em auto;
   font-size: 1em;
@@ -260,7 +266,7 @@ div#dateNow {
   padding: 0.5em 1em 0.5em 1em;
 }
 
-.btn-placeOrder:hover {
+.btnPlaceOrder:hover {
   background-color: #a5545f;
 }
 

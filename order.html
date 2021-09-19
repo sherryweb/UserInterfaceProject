@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png" />
-    <script src="script/order.js"></script>
+    <script src="script/order.js" defer></script>
     <!-- CSS Libraries -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -319,34 +319,38 @@
       </div>
       <!-- end of orderMenu class-->
 
-      <section class="cart-section">
-        <h2 class="cart-header">CART</h2>
-        <div class="cart-row">
-          <span class="cart-item cart-column">Item</span>
-          <span class="cart-price cart-column">Price</span>
-          <span class="cart-quantity cart-column">Quantity</span>
-        </div>
 
-        <div class="cart-items"><!--cart items add here--></div>
-
-        <div class="cart-total">
-          <br />
-          <strong class="cart-total-title">Sub Total</strong>
-          <span class="cart-subtotal" id="subtotalValue">$0</span>
-        </div>
-        <div class="cart-total">
-          <strong class="cart-total-title">Tax</strong>
-          <span class="cart-tax">$0</span>
-        </div>
-        <div class="cart-total">
-          <strong class="cart-total-title">Grand Total</strong>
-          <span class="cart-totalPrice">$0</span>
-        </div>
-        <button class="btn-placeOrder" type="submit" id="placeBtn">
-          Place Order
-        </button>
-      </section>
-
+      <form id="placeOrderForm">
+      <!-- <form action="checkout.html" method="POST" id="placeOrderForm"> -->
+        <section class="cart-section">
+          <h2 class="cart-header">CART</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-column">Item</span>
+            <span class="cart-price cart-column">Price</span>
+            <span class="cart-quantity cart-column">Quantity</span>
+          </div>
+  
+          <div class="cart-items"><!--cart items add here--></div>
+  
+          <div class="cart-total">
+            <br />
+            <strong class="cart-total-title">Sub Total</strong>
+            <!-- <span class="cart-subtotal" id="subtotalValue">$0</span> -->
+            <span class="cart-subtotal" ><input type="text" value="" id="subtotalValue" readonly></span>            
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Tax</strong>
+            <span class="cart-tax">$0</span>
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Grand Total</strong>
+            <span class="cart-totalPrice">$0</span>
+          </div>
+          <!-- <button class="btnPlaceOrder" id="placeBtn"> Place Order</button> -->
+          <input type="submit" class="btnPlaceOrder" id="placeBtn" value="Place Order" onclick="placeOrderClicked()">
+        </section>
+      </form>
+     
       <!-- same content with index  -->
       <div class="app">
         <div id="appdownloadleft">
