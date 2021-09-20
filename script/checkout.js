@@ -22,12 +22,6 @@
     });
 })(jQuery);
 
-
-//$('.timepicker').pickatime({
-//    min: [10,30],
-//   max: [22,00]
-// })
-
 /*************************** get data from order page and caculate price ***************************/
 window.addEventListener('load', () => {
     const subValue = localStorage.getItem('subtotalPassing');

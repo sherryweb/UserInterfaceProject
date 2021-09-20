@@ -1,3 +1,7 @@
+// JavaScript source code for event page
+// Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang
+// Script Date: September 12, 2021
+
 /* Function to create and run the countdown clock */
 function runClock() {
   /* Store the current date and time */

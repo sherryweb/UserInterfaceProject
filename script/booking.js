@@ -1,17 +1,3 @@
-// (function ($) {
-//     "use strict";
-
-//     // Date and time picker
-//     $('#date').datetimepicker({
-//         format: 'L'
-//     });
-//     $('#time').datetimepicker({
-//         format: 'LT'
-//     });
-
-// })(jQuery);
-
-
 function validateForm() {
     // decalre variables
     let nameBooking = document.getElementById('nameInput');

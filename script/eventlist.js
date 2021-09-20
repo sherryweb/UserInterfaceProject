@@ -4,10 +4,7 @@
 
 
 "use strict";
-
 // Event List on September
-
-
 var dayEvent = new Array();
 
 dayEvent[1] = "";
