@@ -1,12 +1,12 @@
 function validateForm() {
     // decalre variables
-    let nameBooking = document.getElementById('nameInput');
+    var nameBooking = document.getElementById('nameInput');
     var emailBooking = document.getElementById('emailInput');
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-    let mobileBooking = document.getElementById('mobile');
-    let dateBooking = document.getElementById('dateSelect');
-    let timeBooking = document.getElementById('timeSelect');
-    let guestBooking = document.getElementById("guestSelect");
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    var mobileBooking = document.getElementById('mobile');
+    var dateBooking = document.getElementById('dateSelect');
+    var timeBooking = document.getElementById('timeSelect');
+    var guestBooking = document.getElementById("guestSelect");
 
     // validate name
     if (nameBooking.value.length === 0) {

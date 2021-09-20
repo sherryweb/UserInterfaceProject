@@ -36,28 +36,28 @@ window.addEventListener('load', () => {
     document.getElementsByClassName("taxValue")[0].innerText = "$" + tax;
     document.getElementsByClassName("shippingValue")[0].innerText = "$" + shippingValue;   
     document.getElementsByClassName("grandtotalValue")[0].innerText = "$" + total;
-})
+});
 
 
 /*************************** validate input part ***************************/
 function validateCheckingForm() {
     // decalre variables
-    let fnameBilling = document.getElementById('firstNameBilling');
-    let lnameBilling = document.getElementById('lastNameBilling');
+    var fnameBilling = document.getElementById('firstNameBilling');
+    var lnameBilling = document.getElementById('lastNameBilling');
     var emailBilling = document.getElementById('emailBilling');
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-    let mobileBilling = document.getElementById("mobileNumberBilling");
-    let addressBilling = document.getElementById("addressBilling");
-    let cityBilling = document.getElementById("cityBilling");
-    let pcodeBilling = document.getElementById("postalcodeBilling");
-    let paymentOption = document.getElementsByName('payment');
-    let namePayment = document.getElementById('cc-name');
-    let numberPayment = document.getElementById('cc-number');
-    let eDatePayment = document.getElementById('cc-expiration');
-    let cvvPayment = document.getElementById('cc-cvv');
-    let deliveryOption = document.getElementsByName('delivery');
-    let selectedDate = document.getElementById("dateinput");
-    let selectedTime = document.getElementById("timeinput");
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    var mobileBilling = document.getElementById("mobileNumberBilling");
+    var addressBilling = document.getElementById("addressBilling");
+    var cityBilling = document.getElementById("cityBilling");
+    var pcodeBilling = document.getElementById("postalcodeBilling");
+    var paymentOption = document.getElementsByName('payment');
+    var namePayment = document.getElementById('cc-name');
+    var numberPayment = document.getElementById('cc-number');
+    var eDatePayment = document.getElementById('cc-expiration');
+    var cvvPayment = document.getElementById('cc-cvv');
+    var deliveryOption = document.getElementsByName('delivery');
+    var selectedDate = document.getElementById("dateinput");
+    var selectedTime = document.getElementById("timeinput");
 
     // validate first  name
     if (fnameBilling.value.length === 0) {

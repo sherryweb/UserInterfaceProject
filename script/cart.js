@@ -1,8 +1,8 @@
-let itemsArray = localStorage.getItem('btnitems') ? JSON.parse(localStorage.getItem('btnitems')) : [];
+var itemsArray = localStorage.getItem('btnitems') ? JSON.parse(localStorage.getItem('btnitems')) : [];
 
 var btnIndexArray=JSON.parse(localStorage.getItem('btnitems'));
 
-let productNames=[
+var productNames=[
     'Cheeseburger','Double Cheeseburger','Bacon Cheeseburger','Grilled Chicken Burger',
     'BBQ Chicken Burger','Mexican Chicken Burger','Popcorn Chicken','Chicekn Nuggets',
     'Poutine','Fries','Chicken Wings','Salad',

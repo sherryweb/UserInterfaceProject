@@ -1,9 +1,9 @@
 function validateForm() {
-    let nameContact = document.getElementById("name");
-    let emailContact = document.getElementById("email");
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-    let subjectContact = document.getElementById("Subject");
-    let feedbackContact = document.getElementById("feedback");
+    var nameContact = document.getElementById("name");
+    var emailContact = document.getElementById("email");
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    var subjectContact = document.getElementById("Subject");
+    var feedbackContact = document.getElementById("feedback");
 
     // validate  name
     if (nameContact.value.length === 0) {
