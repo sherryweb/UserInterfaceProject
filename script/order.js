@@ -12,7 +12,7 @@ if (document.readyState == "loading") {
 function start() {
   var removeCartItemBtn = document.getElementsByClassName("btn-remove");
   for (let i = 0; i < removeCartItemBtn.length; i++) {
-    var btn = removeCartItemBtn[i];
+    let btn = removeCartItemBtn[i];
     btn.addEventListener("click", removeCartItem);
   }
 
@@ -25,7 +25,7 @@ function start() {
   var addToCartBtn = document.getElementsByClassName("order-button");
   var addBtnlength=addToCartBtn.length;
   for (let i = 0; i < addBtnlength; i++) {
-    var btn = addToCartBtn[i];
+    let btn = addToCartBtn[i];
     btn.addEventListener("click", addToCartEvent);
   }
 }

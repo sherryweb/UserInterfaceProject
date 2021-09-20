@@ -20,7 +20,7 @@ function validateForm() {
         window.alert("Please correct email address");
         // emailBooking=null;
         emailBooking.focus();
-        //  emailBooking.style.backgroundColor = 'yellow';
+         emailBooking.style.backgroundColor = 'yellow';
         return false;
     }
 
@@ -29,7 +29,7 @@ function validateForm() {
         alert("Please enter your phone number");
         mobileBooking.focus();
         // If the user hasn't completed the field, changes its background color to yellow
-        //mobileBooking.style.background = "yellow";
+        mobileBooking.style.background = "yellow";
         return false;
     }
 
