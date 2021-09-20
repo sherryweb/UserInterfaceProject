@@ -4,26 +4,26 @@
 /* Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang */
 /* Script Date: September 12, 2021 */
 
-
 /******************************** CSS for main part ********************************/
-.cartBody{
+.cartBody {
   display: block;
   font-family: "Lemon", cursive;
-  max-height:160em;
+  max-height: 160em;
 }
 
-.cart-box-main{
-  position:relative;
+.cart-box-main {
+  position: relative;
   padding: 2em 0 1em 0;
   background-image: url(/images/background.jpg);
-
 }
 
 .cart-box-main h2 {
   font-size: 2.5em;
   text-align: center;
-  padding-top: 24px;
-  color: #9e2a2b;
+  padding-top: 16px;
+  margin-top: 12px;
+  font-family: "Lemon", cursive;
+  color: white;
 }
 
 .img-fluid {
@@ -36,6 +36,7 @@
   text-align: center;
   background-color: #e09f3e;
   padding: 0.2em;
+  width: 1000px;
 }
 
 .table thead th {
@@ -45,7 +46,7 @@
   width: 140px;
 }
 
-.remove-pr:hover{
+.remove-pr:hover {
   color: #9e2a2b;
 }
 
@@ -70,18 +71,19 @@ input[type="text"] {
 }
 
 .summaryContent {
-    margin-top: 1em;
-    margin-left: 36em;
-    margin-right: 14em;
-    background-color: #e09f3e;
-    padding: 1em 0.5em 0.2em 0.5em;
+  margin-top: 1em;
+  margin-left: 36em;
+  margin-right: 14em;
+  background-color: #e09f3e;
+  padding: 1em 0.5em 0.2em 0.5em;
+  width: 510px;
 }
 
 .d-flex div {
   float: right;
 }
 
-.btn-checkout{
+.btn-checkout {
   display: block;
   margin: 1em auto 1em auto;
   font-size: 1em;
