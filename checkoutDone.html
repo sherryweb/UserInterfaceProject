@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout | Los Pollos Hermanos</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="icon" href="images/Los_Pollos_Hermanos_logo.png" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Lemon&family=Special+Elite&display=swap');
-        </style> 
-          <!-- CSS Libraries  -->
-          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    
-          <link href="css/checkout.css" rel="stylesheet">
+    </style>
+    <!-- CSS Libraries  -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="styles/checkout.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,19 +34,24 @@
         </nav>
     </header>
 
-    <div class="container-fluid"> 
-   <h1>order successfully submitted</h1>
-    </div>
-    
-    <!-- same content with index  -->
-    <div id="appdownloadleft">
-        <a href="https://www.apple.com/ca/app-store/"><img id="appstore" src="images/App-Store-resized.jpg"
-                alt="Download our app on App Store" /></a>
-    </div>
-    <div id="appdownloadright">
-        <a href="https://play.google.com/"><img id="googleplay" src="images/Google-Play-resized.png"
-            alt="Download our app on Google Play" /></a>
-    </div>
+    <section class="donebody">
+        <div class="message-done">
+            <h1>Order successfully submitted!</h1>
+        </div>
+
+        <!-- same content with index  -->
+        <div class="app">
+            <div id="appdownloadleft">
+                <a href="https://www.apple.com/ca/app-store/"><img id="appstore" src="images/App-Store-resized.jpg"
+                        alt="Download our app on App Store" /></a>
+            </div>
+            <div id="appdownloadright">
+                <a href="https://play.google.com/"><img id="googleplay" src="images/Google-Play-resized.png"
+                        alt="Download our app on Google Play" /></a>
+            </div>
+        </div>
+
+    </section>
 
     <footer>
         <h2>About Us</h2>
@@ -55,14 +60,14 @@
         <h2>FAQs</h2>
         <h2>Delivery</h2>
         <h3>
-          &copy;2021 Los Pollos Hermanos'. All Rights Reserved.
-          &nbsp;&nbsp;&nbsp;<span>By Team: Xiaotong Zhang,&nbsp;Jia Zhu,&nbsp;Tingting Song</span>
+            &copy;2021 Los Pollos Hermanos'. All Rights Reserved.
+            &nbsp;&nbsp;&nbsp;<span>By Team: Xiaotong Zhang,&nbsp;Jia Zhu,&nbsp;Tingting Song</span>
         </h3>
-      </footer>
-     <!-- JavaScript Libraries -->
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-     <script src="script/checkout.js"></script>
-  
+    </footer>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script/checkout.js"></script>
+
 </body>
 
 </html>

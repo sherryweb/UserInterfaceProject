@@ -130,4 +130,4 @@ function loadContent(){
   xhttp.send();
 }
 
-/*********************************** JS for cart page,another solution ***********************************/
+

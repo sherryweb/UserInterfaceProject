@@ -4,94 +4,6 @@
 /* Developed by: Jia Zhu, Tingting Song, Xiaotong Zhang */
 /* Script Date: September 12, 2021 */
 
-
-/*******************************/
-/********* Index CSS *********/
-/*******************************/
-
-.bookingBody {
-    display: block;
-    box-shadow: #ddbdbd 0.5em 0.8em 1em;
-    font-family: "Lemon", cursive;
-    max-height: 160em;
-}
-
-header {
-    background-color: #540B0E;
-    height: 200px;
-}
-
-header img {
-    width: 150px;
-    position: relative;
-    right: 430px;
-}
-
-header h1 {
-    float: left;
-    position: relative;
-    left: 5em;
-    top: 55px;
-    font-weight: bold;
-    font-family: 'Special Elite', cursive;
-    color: white;
-    font-size: 2.6em;
-}
-
-header nav {
-    background-color: #E09F3E;
-    height: 50px;
-    text-align: center;
-}
-
-nav h2 {
-    display: inline;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    top: 8px; 
-    font-family: 'Lemon', cursive;
-    font-size: large;
-}
-
-nav h2:hover {
-    background-color: #540B0E;
-}
-
-nav h2 a:hover {
-    color: #E09F3E;
-}
-
-nav h2 a {
-    text-decoration: none;
-    color: #540B0E;
-}
-#timeHeading {
-  color: rgb(0, 183, 255);
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  margin-left: 900px;
-  margin-top: -90px;
-}
-div#dateNow {
-  display: block;
-  margin-top: -25px;
-  margin-left: 1000px;
-  border: hidden;
-  color: rgb(0, 183, 255);
-  width: 200px;
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 1.1em;
-  font-weight: 600;
-}
-
-
-/*******************************/
-/********* Booking CSS *********/
-/*******************************/
 .booking {
     position: relative;
     width: 100%;
@@ -161,20 +73,6 @@ div#dateNow {
 .booking .booking-form .input-group [data-toggle="datetimepicker"] {
     cursor: default;
 }
-
-/* For desktop: 
-.col-lg-5 {width:30%}
-.col-lg-7 {width:70%}
-
-https://www.w3schools.com/css/css_rwd_mediaqueries.asp
-
-@media only screen and (max-width: 768px) {
-     For mobile phones: 
-    [class*="col-"] {
-      width: 100%;
-    }
-  }
- */
 
 
 /*********  footer CSS *********/

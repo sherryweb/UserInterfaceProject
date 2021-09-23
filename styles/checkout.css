@@ -4,94 +4,6 @@
 /* Developed by: Xiaotong Zhang */
 /* Script Date: Sep  2021 */
 
-
-/*******************************/
-/********* Index CSS *********/
-/*******************************/
-
-body {
-    margin: auto;
-    max-width: 1200px;
-    min-width: 800px;
-    max-height: 160em;
-    box-shadow: #ddbdbd 0.5em 0.8em 1em;
-}
-
-#timeHeading {
-  color: rgb(0, 183, 255);
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
-  margin-left: 900px;
-  margin-top: -80px;
-}
-
-div#dateNow {
-  display: block;
-  margin-top: -28px;
-  margin-left: 1000px;
-  border: hidden;
-  color: rgb(0, 183, 255);
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 600;
-}
-
-header {
-    background-color: #540B0E;
-    height: 200px;
-}
-
-header img {
-    width: 150px;
-    position: relative;
-    right: 430px;
-}
-
-header h1 {
-    float: left;
-    position: relative;
-    left: 5em;
-    top: 55px;
-    font-weight: bold;
-    font-family: 'Special Elite', cursive;
-    color: white;
-    font-size: 2.6em;
-}
-
-header nav {
-    background-color: #E09F3E;
-    height: 50px;
-    text-align: center;
-}
-
-nav h2 {
-    display: inline;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    top: 8px; 
-    font-family: 'Lemon', cursive;
-    font-size: large;
-}
-
-nav h2:hover {
-    background-color: #540B0E;
-}
-
-nav h2 a:hover {
-    color: #E09F3E;
-}
-
-nav h2 a {
-    text-decoration: none;
-    color: #540B0E;
-}
-
-/**********************************/
-/********** Checkout CSS **********/
-/**********************************/
 .checkout {
     position: relative;
     padding-top: 30px;
@@ -192,6 +104,20 @@ nav h2 a {
     list-style-type: none;
     width: 20%;
     float: left;
+}
+
+/* CSS for checkout done page*/
+.donebody{
+    background-image: url("../images/background.jpg");
+}
+
+.donebody h1{
+    color: white;
+}
+
+.message-done{
+    padding-top: 10px;
+    text-align: center;
 }
 
 /**********************************/
